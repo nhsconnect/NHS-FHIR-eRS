@@ -1,0 +1,122 @@
+
+***Furnace log date run: 02 November 2016 1417 ***
+Furnace: Fhir publisher tool version: 2.7.6137.25942
+***Starting generation***
+Source directory: S:\Bushra\e-RS\DraftC\Generation 
+ Target Directory: S:\Bushra\e-RS\DraftC\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.ClinicalReferralInformationQuery
+IG Creation - Adding eRS-ClinicalReferralInformation-Operation-1 to IGResource.xml
+            - Adding Profile.ClinicalReferralInformationQuery package to IGResource.xml
+            - Saving Operation-ClinicalReferralInformation.xml in examples folder
+            - Saving eRS-ClinicalReferralInformation-Operation-1.xml in OperationDefinition folder
+IG Creation - eRS-ClinicalReferralInformation-Operation-1 finished
+Create folder Profile.ReferralRequestResponse
+IG Creation - Adding eRS-Appointment-1 to IGResource.xml
+            - Adding Profile.ReferralRequestResponse package to IGResource.xml
+            - Saving Appointment.xml in examples folder
+            - Saving eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - eRS-Appointment-1 finished
+IG Creation - Adding eRS-DocumentReference-1 to IGResource.xml
+            - Saving eRS-DocumentReference-1.xml in StructureDefinition folder
+IG Creation - eRS-DocumentReference-1 finished
+IG Creation - Adding eRS-HealthcareService-1 to IGResource.xml
+            - Saving HealthcareService.xml in examples folder
+            - Saving eRS-HealthcareService-1.xml in StructureDefinition folder
+IG Creation - eRS-HealthcareService-1 finished
+IG Creation - Adding eRS-Location-1 to IGResource.xml
+            - Saving Location.xml in examples folder
+            - Saving eRS-Location-1.xml in StructureDefinition folder
+IG Creation - eRS-Location-1 finished
+IG Creation - Adding eRS-OperationOutcome-1 to IGResource.xml
+            - Saving OperationOutcome.xml in examples folder
+            - Saving eRS-OperationOutcome-1.xml in StructureDefinition folder
+IG Creation - eRS-OperationOutcome-1 finished
+IG Creation - Adding eRS-Patient-1 to IGResource.xml
+            - Saving Patient.xml in examples folder
+            - Saving eRS-Patient-1.xml in StructureDefinition folder
+IG Creation - eRS-Patient-1 finished
+IG Creation - Adding eRS-Practitioner-1 to IGResource.xml
+            - Saving Practitioner.xml in examples folder
+            - Saving eRS-Practitioner-1.xml in StructureDefinition folder
+IG Creation - eRS-Practitioner-1 finished
+IG Creation - Adding eRS-ReferralRequest-1 to IGResource.xml
+            - Saving ReferralRequest.xml in examples folder
+            - Saving eRS-ReferralRequest-1.xml in StructureDefinition folder
+IG Creation - eRS-ReferralRequest-1 finished
+IG Creation - Adding Extension-eRS-Appointment-1 to IGResource.xml
+            - Saving Extension-eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-Appointment-1 finished
+IG Creation - Adding Extension-eRS-AttachedBy-1 to IGResource.xml
+            - Saving Extension-eRS-AttachedBy-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-AttachedBy-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoFirstSubmitted-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoFirstSubmitted-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoFirstSubmitted-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoLastUpdated-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoLastUpdated-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoLastUpdated-1 finished
+IG Creation - Adding appointment-status-1 to IGResource.xml
+            - Saving appointment-status-1.xml in ValueSet folder
+IG Creation - appointment-status-1 finished
+IG Creation - Adding eRS-APIErrorCode-1 to IGResource.xml
+            - Saving eRS-APIErrorCode-1.xml in ValueSet folder
+IG Creation - eRS-APIErrorCode-1 finished
+IG Creation - Adding eRS-AttachmentType-1 to IGResource.xml
+            - Saving eRS-AttachmentType-1.xml in ValueSet folder
+IG Creation - eRS-AttachmentType-1 finished
+IG Creation - Adding eRS-Priority-1 to IGResource.xml
+            - Saving eRS-Priority-1.xml in ValueSet folder
+IG Creation - eRS-Priority-1 finished
+IG Creation - Adding eRS-Specialty-1 to IGResource.xml
+            - Saving eRS-Specialty-1.xml in ValueSet folder
+IG Creation - eRS-Specialty-1 finished
+IG Creation - Adding referral-status-1 to IGResource.xml
+            - Saving referral-status-1.xml in ValueSet folder
+IG Creation - referral-status-1 finished
+Create folder Profile.ReferralsForReviewWorklistQuery
+IG Creation - Adding eRS-AssignedIndicator-1 to IGResource.xml
+            - Adding Profile.ReferralsForReviewWorklistQuery package to IGResource.xml
+            - Saving eRS-AssignedIndicator-1.xml in ValueSet folder
+IG Creation - eRS-AssignedIndicator-1 finished
+IG Creation - Adding eRS-ReferralListSelector-1 to IGResource.xml
+            - Saving eRS-ReferralListSelector-1.xml in ValueSet folder
+IG Creation - eRS-ReferralListSelector-1 finished
+IG Creation - Adding eRS-Specialty-1 to IGResource.xml
+            - Saving eRS-Specialty-1.xml in ValueSet folder
+IG Creation - eRS-Specialty-1 finished
+IG Creation - Adding eRS-FetchWorklist-Operation-1 to IGResource.xml
+**Error** 
+ Message:  Could not find .md file for eRS-FetchWorklist-Operation-1! 
+ S:\Bushra\e-RS\DraftC\Generation\Profile.ReferralsForReviewWorklistQuery\ers-fetchworklist-operation-1.md is required 
+ Stacktrace:    at Hl7.Fhir.Publication.ImplementationGuide.ResourceFactory.CreateResource(ResourceComponent resource, String mdFilePath) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\ResourceFactory.cs:line 66
+   at Hl7.Fhir.Publication.ImplementationGuide.ResourceFactory.CreateProfileResource(String mdFileName) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\ResourceFactory.cs:line 41
+   at Hl7.Fhir.Publication.ImplementationGuide.Factory.AddResourceAsProfile(ResourceFactory resourceFactory) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\ImplementationGuide\Factory.cs:line 136
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.PackageBuilder.AddOperationDefinition() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageBuilder.cs:line 66
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.IgPackageProcessor.AddResourceToImplementationGuide() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageProcessor.cs:line 125
+   at Hl7.Fhir.Publication.Processors.ImplementationGuide.IgPackageProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\ImplementationGuide\PackageProcessor.cs:line 95
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Processors.MakeForAllProcessor.Process(Document input, Stage output, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Processors\MakeForAllProcessor.cs:line 42
+   at Hl7.Fhir.Publication.Framework.Processor.Process(IProcessor processor, Stage input, Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 16
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, Stage input, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Processor.Process(PipeLine pipeline, ISelector filter, Log log, IDirectoryCreator fileCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Processor.cs:line 38
+   at Hl7.Fhir.Publication.Framework.Statement.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Statement.cs:line 31
+   at Hl7.Fhir.Publication.Framework.Make.Bulk.Execute(Log log, IDirectoryCreator directoryCreator) in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Make\Bulk.cs:line 25
+   at Hl7.Fhir.Publication.Framework.Publisher.Publish() in C:\Users\rmk\Source\Repos\FHIR.Publication.DSTU2\Fhir.Publication\Framework\Publisher.cs:line 80 
+ InnerException: 

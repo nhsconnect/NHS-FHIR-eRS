@@ -1,0 +1,1078 @@
+
+***Furnace log date run: 19 December 2016 1554 ***
+Furnace: Fhir publisher tool version: 2.7.6179.25752
+***Starting generation***
+Source directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generation 
+ Target Directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated
+Clear down Generated folder
+Copying files into Schemas folder ...
+Copying files into dist folder ...
+Start: creating IGResource.xml
+End: IGResource.xml created
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Markdown rendering - index 	: index.md
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Razor rendering index
+Create folder Profile.ClinicalReferralInformationQuery
+IG Creation - Adding eRS-ClinicalReferralInformation-Operation-1 to IGResource.xml
+            - Adding Profile.ClinicalReferralInformationQuery package to IGResource.xml
+            - Saving eRS-ClinicalReferralInformation-Operation-1.xml in OperationDefinition folder
+IG Creation - eRS-ClinicalReferralInformation-Operation-1 finished
+Create folder Profile.ReferralRequestResponse
+IG Creation - Adding eRS-Appointment-1 to IGResource.xml
+            - Adding Profile.ReferralRequestResponse package to IGResource.xml
+            - Saving Appointment.xml in examples folder
+            - Saving eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - eRS-Appointment-1 finished
+IG Creation - Adding eRS-DocumentReference-1 to IGResource.xml
+            - Saving DocumentReference.xml in examples folder
+            - Saving eRS-DocumentReference-1.xml in StructureDefinition folder
+IG Creation - eRS-DocumentReference-1 finished
+IG Creation - Adding eRS-HealthcareService-1 to IGResource.xml
+            - Saving HealthcareService.xml in examples folder
+            - Saving eRS-HealthcareService-1.xml in StructureDefinition folder
+IG Creation - eRS-HealthcareService-1 finished
+IG Creation - Adding eRS-Location-1 to IGResource.xml
+            - Saving Location.xml in examples folder
+            - Saving eRS-Location-1.xml in StructureDefinition folder
+IG Creation - eRS-Location-1 finished
+IG Creation - Adding eRS-OperationOutcome-1 to IGResource.xml
+            - Saving OperationOutcome.xml in examples folder
+            - Saving eRS-OperationOutcome-1.xml in StructureDefinition folder
+IG Creation - eRS-OperationOutcome-1 finished
+IG Creation - Adding eRS-Patient-1 to IGResource.xml
+            - Saving Patient.xml in examples folder
+            - Saving eRS-Patient-1.xml in StructureDefinition folder
+IG Creation - eRS-Patient-1 finished
+IG Creation - Adding eRS-Practitioner-1 to IGResource.xml
+            - Saving Practitioner.xml in examples folder
+            - Saving eRS-Practitioner-1.xml in StructureDefinition folder
+IG Creation - eRS-Practitioner-1 finished
+IG Creation - Adding eRS-ReferralRequest-1 to IGResource.xml
+            - Saving ReferralRequest.xml in examples folder
+            - Saving eRS-ReferralRequest-1.xml in StructureDefinition folder
+IG Creation - eRS-ReferralRequest-1 finished
+IG Creation - Adding Extension-eRS-Appointment-1 to IGResource.xml
+            - Saving Extension-eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-Appointment-1 finished
+IG Creation - Adding Extension-eRS-AttachedBy-1 to IGResource.xml
+            - Saving Extension-eRS-AttachedBy-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-AttachedBy-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoFirstSubmitted-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoFirstSubmitted-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoFirstSubmitted-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoLastUpdated-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoLastUpdated-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoLastUpdated-1 finished
+IG Creation - Adding appointment-status-1 to IGResource.xml
+            - Saving appointment-status-1.xml in ValueSet folder
+IG Creation - appointment-status-1 finished
+IG Creation - Adding eRS-APIErrorCode-1 to IGResource.xml
+            - Saving eRS-APIErrorCode-1.xml in ValueSet folder
+IG Creation - eRS-APIErrorCode-1 finished
+IG Creation - Adding eRS-AttachmentType-1 to IGResource.xml
+            - Saving eRS-AttachmentType-1.xml in ValueSet folder
+IG Creation - eRS-AttachmentType-1 finished
+IG Creation - Adding eRS-Priority-1 to IGResource.xml
+            - Saving eRS-Priority-1.xml in ValueSet folder
+IG Creation - eRS-Priority-1 finished
+IG Creation - Adding eRS-Specialty-1 to IGResource.xml
+            - Saving eRS-Specialty-1.xml in ValueSet folder
+IG Creation - eRS-Specialty-1 finished
+IG Creation - Adding referral-status-1 to IGResource.xml
+            - Saving referral-status-1.xml in ValueSet folder
+IG Creation - referral-status-1 finished
+Create folder Profile.ReferralsForReviewWorklistQuery
+IG Creation - Adding eRS-AssignedIndicator-1 to IGResource.xml
+            - Adding Profile.ReferralsForReviewWorklistQuery package to IGResource.xml
+            - Saving eRS-AssignedIndicator-1.xml in ValueSet folder
+IG Creation - eRS-AssignedIndicator-1 finished
+IG Creation - Adding eRS-ReferralListSelector-1 to IGResource.xml
+            - Saving eRS-ReferralListSelector-1.xml in ValueSet folder
+IG Creation - eRS-ReferralListSelector-1 finished
+IG Creation - Adding eRS-Specialty-1 to IGResource.xml
+            - Saving eRS-Specialty-1.xml in ValueSet folder
+IG Creation - eRS-Specialty-1 finished
+IG Creation - Adding eRS-FetchWorklist-Operation-1 to IGResource.xml
+            - Saving Operation-FetchWorklist.xml in examples folder
+            - Saving eRS-FetchWorklist-Operation-1.xml in OperationDefinition folder
+IG Creation - eRS-FetchWorklist-Operation-1 finished
+Create folder Profile.ReferralsForReviewWorklistResponse
+IG Creation - Adding eRS-Appointment-1 to IGResource.xml
+            - Adding Profile.ReferralsForReviewWorklistResponse package to IGResource.xml
+            - Saving Appointment.xml in examples folder
+            - Saving eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - eRS-Appointment-1 finished
+IG Creation - Adding eRS-DocumentReference-1 to IGResource.xml
+            - Saving DocumentReference.xml in examples folder
+            - Saving eRS-DocumentReference-1.xml in StructureDefinition folder
+IG Creation - eRS-DocumentReference-1 finished
+IG Creation - Adding eRS-FetchWorklist-List-1 to IGResource.xml
+            - Saving List-1a.xml in examples folder
+            - Saving List-1b.xml in examples folder
+            - Saving eRS-FetchWorklist-List-1.xml in StructureDefinition folder
+IG Creation - eRS-FetchWorklist-List-1 finished
+IG Creation - Adding eRS-HealthcareService-1 to IGResource.xml
+            - Saving HealthcareService.xml in examples folder
+            - Saving eRS-HealthcareService-1.xml in StructureDefinition folder
+IG Creation - eRS-HealthcareService-1 finished
+IG Creation - Adding eRS-Location-1 to IGResource.xml
+            - Saving Location.xml in examples folder
+            - Saving eRS-Location-1.xml in StructureDefinition folder
+IG Creation - eRS-Location-1 finished
+IG Creation - Adding eRS-OperationOutcome-1 to IGResource.xml
+            - Saving OperationOutcome.xml in examples folder
+            - Saving eRS-OperationOutcome-1.xml in StructureDefinition folder
+IG Creation - eRS-OperationOutcome-1 finished
+IG Creation - Adding eRS-Patient-1 to IGResource.xml
+            - Saving Patient.xml in examples folder
+            - Saving eRS-Patient-1.xml in StructureDefinition folder
+IG Creation - eRS-Patient-1 finished
+IG Creation - Adding eRS-Practitioner-1 to IGResource.xml
+            - Saving Practitioner.xml in examples folder
+            - Saving eRS-Practitioner-1.xml in StructureDefinition folder
+IG Creation - eRS-Practitioner-1 finished
+IG Creation - Adding eRS-ReferralRequest-1 to IGResource.xml
+            - Saving ReferralRequest.xml in examples folder
+            - Saving eRS-ReferralRequest-1.xml in StructureDefinition folder
+IG Creation - eRS-ReferralRequest-1 finished
+IG Creation - Adding Extension-eRS-Appointment-1 to IGResource.xml
+            - Saving Extension-eRS-Appointment-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-Appointment-1 finished
+IG Creation - Adding Extension-eRS-AttachedBy-1 to IGResource.xml
+            - Saving Extension-eRS-AttachedBy-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-AttachedBy-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoFirstSubmitted-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoFirstSubmitted-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoFirstSubmitted-1 finished
+IG Creation - Adding Extension-eRS-ClinicalInfoLastUpdated-1 to IGResource.xml
+            - Saving Extension-eRS-ClinicalInfoLastUpdated-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ClinicalInfoLastUpdated-1 finished
+IG Creation - Adding Extension-eRS-ReferralsforReview-WorkListItem-1 to IGResource.xml
+            - Saving Extension-eRS-ReferralsforReview-WorkListItem-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-ReferralsforReview-WorkListItem-1 finished
+IG Creation - Adding appointment-status-1 to IGResource.xml
+            - Saving appointment-status-1.xml in ValueSet folder
+IG Creation - appointment-status-1 finished
+IG Creation - Adding eRS-APIErrorCode-1 to IGResource.xml
+            - Saving eRS-APIErrorCode-1.xml in ValueSet folder
+IG Creation - eRS-APIErrorCode-1 finished
+IG Creation - Adding eRS-AttachmentType-1 to IGResource.xml
+            - Saving eRS-AttachmentType-1.xml in ValueSet folder
+IG Creation - eRS-AttachmentType-1 finished
+IG Creation - Adding eRS-Priority-1 to IGResource.xml
+            - Saving eRS-Priority-1.xml in ValueSet folder
+IG Creation - eRS-Priority-1 finished
+IG Creation - Adding eRS-RequestContextStatus-1 to IGResource.xml
+            - Saving eRS-RequestContextStatus-1.xml in ValueSet folder
+IG Creation - eRS-RequestContextStatus-1 finished
+IG Creation - Adding eRS-Specialty-1 to IGResource.xml
+            - Saving eRS-Specialty-1.xml in ValueSet folder
+IG Creation - eRS-Specialty-1 finished
+IG Creation - Adding referral-status-1 to IGResource.xml
+            - Saving referral-status-1.xml in ValueSet folder
+IG Creation - referral-status-1 finished
+Create folder Profile.Valueset
+IG Creation - Adding eRS-Specialty-ValueSet-1 to IGResource.xml
+            - Adding Profile.Valueset package to IGResource.xml
+            - Saving eRS-Specialty-ValueSet-1.xml in StructureDefinition folder
+IG Creation - eRS-Specialty-ValueSet-1 finished
+IG Creation - Adding Extension-eRS-EffectivefromDate-1 to IGResource.xml
+            - Saving Extension-eRS-EffectivefromDate-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-EffectivefromDate-1 finished
+IG Creation - Adding Extension-eRS-EffectivetoDate-1 to IGResource.xml
+            - Saving Extension-eRS-EffectivetoDate-1.xml in StructureDefinition folder
+IG Creation - Extension-eRS-EffectivetoDate-1 finished
+Profile Table: IGResource.
+Loading resources into resource store
+Create directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ClinicalReferralInformationQuery
+Render profile table Profile.ClinicalReferralInformationQuery
+Loading resources into resource store
+Create directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralRequestResponse
+Render profile table Profile.ReferralRequestResponse
+Loading resources into resource store
+Create directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralsForReviewWorklistQuery
+Render profile table Profile.ReferralsForReviewWorklistQuery
+Loading resources into resource store
+Create directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralsForReviewWorklistResponse
+Render profile table Profile.ReferralsForReviewWorklistResponse
+Loading resources into resource store
+Create directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.Valueset
+Render profile table Profile.Valueset
+Profile Table: Finish - IGResource
+Loading resources into resource store
+Loading resources into resource store
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-Appointment-1
+Creating structure for eRS-Appointment-1
+CreateRow Appointment( Appointment )
+CreateRow Appointment.status( Appointment )
+CreateRow Appointment.start( Appointment )
+CreateRow Appointment.end( Appointment )
+CreateRow Appointment.participant( Appointment )
+CreateRow Appointment.participant.modifierExtension( Appointment )
+CreateRow Appointment.participant.type( Appointment )
+CreateRow Appointment.participant.type.coding( Appointment )
+CreateRow Appointment.participant.type.coding.system( Appointment )
+CreateRow Appointment.participant.type.coding.code( Appointment )
+CreateRow Appointment.participant.type.coding.display( Appointment )
+CreateRow Appointment.participant.actor( Appointment )
+CreateRow Appointment.participant.status( Appointment )
+ create Bindings table
+*** element Name for Appointment.status has not been populated!
+*** element Name for Appointment.participant.type has not been populated!
+*** element Name for Appointment.participant.status has not been populated!
+ format binding for Appointment.status
+ format binding for Appointment.participant.type
+ format binding for Appointment.participant.status
+Render page eRS-Appointment-1
+Structure Page: Finish - ers-appointment-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-DocumentReference-1
+Creating structure for eRS-DocumentReference-1
+CreateRow DocumentReference( DocumentReference )
+CreateRow DocumentReference.type( DocumentReference )
+CreateRow DocumentReference.type.coding( DocumentReference )
+CreateRow DocumentReference.type.coding.system( DocumentReference )
+CreateRow DocumentReference.type.coding.code( DocumentReference )
+CreateRow DocumentReference.type.coding.display( DocumentReference )
+CreateRow DocumentReference.indexed( DocumentReference )
+CreateRow DocumentReference.status( DocumentReference )
+CreateRow DocumentReference.description( DocumentReference )
+CreateRow DocumentReference.content( DocumentReference )
+CreateRow DocumentReference.content.modifierExtension( DocumentReference )
+CreateRow DocumentReference.content.attachment( DocumentReference )
+CreateRow DocumentReference.content.attachment.extension( DocumentReference )
+CreateRow DocumentReference.content.attachment.extension( DocumentReference )
+CreateRow DocumentReference.content.attachment.contentType( DocumentReference )
+CreateRow DocumentReference.content.attachment.url( DocumentReference )
+CreateRow DocumentReference.content.attachment.size( DocumentReference )
+CreateRow DocumentReference.content.attachment.title( DocumentReference )
+CreateRow DocumentReference.content.attachment.creation( DocumentReference )
+ create Bindings table
+*** element Name for DocumentReference.type has not been populated!
+*** element Name for DocumentReference.status has not been populated!
+*** element Name for DocumentReference.content.attachment.contentType has not been populated!
+ format binding for DocumentReference.type
+ format binding for DocumentReference.status
+ format binding for DocumentReference.content.attachment.contentType
+Render page eRS-DocumentReference-1
+Structure Page: Finish - ers-documentreference-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-HealthcareService-1
+Creating structure for eRS-HealthcareService-1
+CreateRow HealthcareService( HealthcareService )
+CreateRow HealthcareService.identifier( HealthcareService )
+CreateRow HealthcareService.identifier.system( HealthcareService )
+CreateRow HealthcareService.identifier.value( HealthcareService )
+CreateRow HealthcareService.location( HealthcareService )
+CreateRow HealthcareService.location.reference( HealthcareService )
+CreateRow HealthcareService.serviceName( HealthcareService )
+ create Bindings table
+Render page eRS-HealthcareService-1
+Structure Page: Finish - ers-healthcareservice-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-Location-1
+Creating structure for eRS-Location-1
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+ create Bindings table
+*** element Name for Location.telecom.system has not been populated!
+*** element Name for Location.telecom.use has not been populated!
+*** element Name for Location.address.use has not been populated!
+*** element Name for Location.address.type has not been populated!
+ format binding for Location.telecom.system
+ format binding for Location.telecom.use
+ format binding for Location.address.use
+ format binding for Location.address.type
+Render page eRS-Location-1
+Structure Page: Finish - ers-location-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-OperationOutcome-1
+Creating structure for eRS-OperationOutcome-1
+CreateRow OperationOutcome( OperationOutcome )
+CreateRow OperationOutcome.issue( OperationOutcome )
+CreateRow OperationOutcome.issue.modifierExtension( OperationOutcome )
+CreateRow OperationOutcome.issue.severity( OperationOutcome )
+CreateRow OperationOutcome.issue.code( OperationOutcome )
+CreateRow OperationOutcome.issue.details( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.system( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.code( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.display( OperationOutcome )
+CreateRow OperationOutcome.issue.diagnostics( OperationOutcome )
+CreateRow OperationOutcome.issue.location( OperationOutcome )
+ create Bindings table
+*** element Name for OperationOutcome.issue.severity has not been populated!
+*** element Name for OperationOutcome.issue.code has not been populated!
+*** element Name for OperationOutcome.issue.details has not been populated!
+ format binding for OperationOutcome.issue.severity
+ format binding for OperationOutcome.issue.code
+ format binding for OperationOutcome.issue.details
+Render page eRS-OperationOutcome-1
+Structure Page: Finish - ers-operationoutcome-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-Patient-1
+Creating structure for eRS-Patient-1
+CreateRow Patient( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+ create Bindings table
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.telecom.system has not been populated!
+*** element Name for Patient.telecom.use has not been populated!
+*** element Name for Patient.address.use has not been populated!
+*** element Name for Patient.contact.relationship has not been populated!
+*** element Name for Patient.contact.name.use has not been populated!
+*** element Name for Patient.contact.telecom.system has not been populated!
+*** element Name for Patient.contact.telecom.use has not been populated!
+*** element Name for Patient.contact.address.use has not been populated!
+*** element Name for Patient.contact.address.type has not been populated!
+*** element Name for Patient.contact.gender has not been populated!
+*** element Name for Patient.communication.language has not been populated!
+ format binding for Patient.name.use
+ format binding for Patient.telecom.system
+ format binding for Patient.telecom.use
+ format binding for Patient.address.use
+ format binding for Patient.contact.relationship
+ format binding for Patient.contact.telecom.system
+ format binding for Patient.contact.telecom.use
+ format binding for Patient.contact.address.type
+ format binding for Patient.contact.gender
+ format binding for Patient.communication.language
+Render page eRS-Patient-1
+Structure Page: Finish - ers-patient-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-Practitioner-1
+Creating structure for eRS-Practitioner-1
+CreateRow Practitioner( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+ create Bindings table
+*** element Name for Practitioner.name.use has not been populated!
+*** element Name for Practitioner.telecom.system has not been populated!
+*** element Name for Practitioner.telecom.use has not been populated!
+*** element Name for Practitioner.address.use has not been populated!
+*** element Name for Practitioner.address.type has not been populated!
+*** element Name for Practitioner.practitionerRole.role has not been populated!
+*** element Name for Practitioner.qualification.code has not been populated!
+ format binding for Practitioner.name.use
+ format binding for Practitioner.telecom.system
+ format binding for Practitioner.telecom.use
+ format binding for Practitioner.address.use
+ format binding for Practitioner.address.type
+ format binding for Practitioner.practitionerRole.role
+ format binding for Practitioner.qualification.code
+Render page eRS-Practitioner-1
+Structure Page: Finish - ers-practitioner-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : eRS-ReferralRequest-1
+Creating structure for eRS-ReferralRequest-1
+CreateRow ReferralRequest( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.status( ReferralRequest )
+CreateRow ReferralRequest.specialty( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.system( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.code( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.display( ReferralRequest )
+CreateRow ReferralRequest.priority( ReferralRequest )
+CreateRow ReferralRequest.priority.coding( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.system( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.code( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.display( ReferralRequest )
+CreateRow ReferralRequest.patient( ReferralRequest )
+CreateRow ReferralRequest.patient.reference( ReferralRequest )
+CreateRow ReferralRequest.patient.display( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation.reference( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation.display( ReferralRequest )
+ create Bindings table
+*** element Name for ReferralRequest.status has not been populated!
+*** element Name for ReferralRequest.specialty has not been populated!
+*** element Name for ReferralRequest.priority has not been populated!
+ format binding for ReferralRequest.status
+ format binding for ReferralRequest.specialty
+ format binding for ReferralRequest.priority
+Render page eRS-ReferralRequest-1
+Structure Page: Finish - ers-referralrequest-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : Extension-eRS-Appointment-1
+Creating structure for Extension-eRS-Appointment-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-Appointment-1
+Structure Page: Finish - extension-ers-appointment-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : Extension-eRS-AttachedBy-1
+Creating structure for Extension-eRS-AttachedBy-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-AttachedBy-1
+Structure Page: Finish - extension-ers-attachedby-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : Extension-eRS-ClinicalInfoFirstSubmitted-1
+Creating structure for Extension-eRS-ClinicalInfoFirstSubmitted-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-ClinicalInfoFirstSubmitted-1
+Structure Page: Finish - extension-ers-clinicalinfofirstsubmitted-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralRequestResponse : Extension-eRS-ClinicalInfoLastUpdated-1
+Creating structure for Extension-eRS-ClinicalInfoLastUpdated-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-ClinicalInfoLastUpdated-1
+Structure Page: Finish - extension-ers-clinicalinfolastupdated-1
+Create example files
+Create resource files (Structure Definitions)
+Loading resources into resource store
+Loading resources into resource store
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-Appointment-1
+Creating structure for eRS-Appointment-1
+CreateRow Appointment( Appointment )
+CreateRow Appointment.status( Appointment )
+CreateRow Appointment.start( Appointment )
+CreateRow Appointment.end( Appointment )
+CreateRow Appointment.participant( Appointment )
+CreateRow Appointment.participant.modifierExtension( Appointment )
+CreateRow Appointment.participant.type( Appointment )
+CreateRow Appointment.participant.type.coding( Appointment )
+CreateRow Appointment.participant.type.coding.system( Appointment )
+CreateRow Appointment.participant.type.coding.code( Appointment )
+CreateRow Appointment.participant.type.coding.display( Appointment )
+CreateRow Appointment.participant.actor( Appointment )
+CreateRow Appointment.participant.status( Appointment )
+ create Bindings table
+*** element Name for Appointment.status has not been populated!
+*** element Name for Appointment.participant.type has not been populated!
+*** element Name for Appointment.participant.status has not been populated!
+ format binding for Appointment.status
+ format binding for Appointment.participant.type
+ format binding for Appointment.participant.status
+Render page eRS-Appointment-1
+Structure Page: Finish - ers-appointment-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-DocumentReference-1
+Creating structure for eRS-DocumentReference-1
+CreateRow DocumentReference( DocumentReference )
+CreateRow DocumentReference.type( DocumentReference )
+CreateRow DocumentReference.type.coding( DocumentReference )
+CreateRow DocumentReference.type.coding.system( DocumentReference )
+CreateRow DocumentReference.type.coding.code( DocumentReference )
+CreateRow DocumentReference.type.coding.display( DocumentReference )
+CreateRow DocumentReference.indexed( DocumentReference )
+CreateRow DocumentReference.status( DocumentReference )
+CreateRow DocumentReference.description( DocumentReference )
+CreateRow DocumentReference.content( DocumentReference )
+CreateRow DocumentReference.content.modifierExtension( DocumentReference )
+CreateRow DocumentReference.content.attachment( DocumentReference )
+CreateRow DocumentReference.content.attachment.extension( DocumentReference )
+CreateRow DocumentReference.content.attachment.extension( DocumentReference )
+CreateRow DocumentReference.content.attachment.contentType( DocumentReference )
+CreateRow DocumentReference.content.attachment.url( DocumentReference )
+CreateRow DocumentReference.content.attachment.size( DocumentReference )
+CreateRow DocumentReference.content.attachment.title( DocumentReference )
+CreateRow DocumentReference.content.attachment.creation( DocumentReference )
+ create Bindings table
+*** element Name for DocumentReference.type has not been populated!
+*** element Name for DocumentReference.status has not been populated!
+*** element Name for DocumentReference.content.attachment.contentType has not been populated!
+ format binding for DocumentReference.type
+ format binding for DocumentReference.status
+ format binding for DocumentReference.content.attachment.contentType
+Render page eRS-DocumentReference-1
+Structure Page: Finish - ers-documentreference-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-FetchWorklist-List-1
+Creating structure for eRS-FetchWorklist-List-1
+CreateRow List( List )
+CreateRow List.status( List )
+CreateRow List.mode( List )
+CreateRow List.entry( List )
+CreateRow List.entry.extension( List )
+CreateRow List.entry.extension( List )
+CreateRow List.entry.modifierExtension( List )
+CreateRow List.entry.item( List )
+CreateRow List.entry.item.reference( List )
+CreateRow List.emptyReason( List )
+CreateRow List.emptyReason.coding( List )
+CreateRow List.emptyReason.coding.system( List )
+CreateRow List.emptyReason.coding.code( List )
+CreateRow List.emptyReason.coding.display( List )
+ create Bindings table
+*** element Name for List.status has not been populated!
+*** element Name for List.mode has not been populated!
+*** element Name for List.emptyReason has not been populated!
+ format binding for List.status
+ format binding for List.mode
+ format binding for List.emptyReason
+Render page eRS-FetchWorklist-List-1
+Structure Page: Finish - ers-fetchworklist-list-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-HealthcareService-1
+Creating structure for eRS-HealthcareService-1
+CreateRow HealthcareService( HealthcareService )
+CreateRow HealthcareService.identifier( HealthcareService )
+CreateRow HealthcareService.identifier.system( HealthcareService )
+CreateRow HealthcareService.identifier.value( HealthcareService )
+CreateRow HealthcareService.location( HealthcareService )
+CreateRow HealthcareService.location.reference( HealthcareService )
+CreateRow HealthcareService.serviceName( HealthcareService )
+ create Bindings table
+Render page eRS-HealthcareService-1
+Structure Page: Finish - ers-healthcareservice-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-Location-1
+Creating structure for eRS-Location-1
+CreateRow Location( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+CreateRow Location.identifier( Location )
+CreateRow Location.identifier.system( Location )
+CreateRow Location.identifier.value( Location )
+ create Bindings table
+*** element Name for Location.telecom.system has not been populated!
+*** element Name for Location.telecom.use has not been populated!
+*** element Name for Location.address.use has not been populated!
+*** element Name for Location.address.type has not been populated!
+ format binding for Location.telecom.system
+ format binding for Location.telecom.use
+ format binding for Location.address.use
+ format binding for Location.address.type
+Render page eRS-Location-1
+Structure Page: Finish - ers-location-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-OperationOutcome-1
+Creating structure for eRS-OperationOutcome-1
+CreateRow OperationOutcome( OperationOutcome )
+CreateRow OperationOutcome.issue( OperationOutcome )
+CreateRow OperationOutcome.issue.modifierExtension( OperationOutcome )
+CreateRow OperationOutcome.issue.severity( OperationOutcome )
+CreateRow OperationOutcome.issue.code( OperationOutcome )
+CreateRow OperationOutcome.issue.details( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.system( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.code( OperationOutcome )
+CreateRow OperationOutcome.issue.details.coding.display( OperationOutcome )
+CreateRow OperationOutcome.issue.diagnostics( OperationOutcome )
+CreateRow OperationOutcome.issue.location( OperationOutcome )
+ create Bindings table
+*** element Name for OperationOutcome.issue.severity has not been populated!
+*** element Name for OperationOutcome.issue.code has not been populated!
+*** element Name for OperationOutcome.issue.details has not been populated!
+ format binding for OperationOutcome.issue.severity
+ format binding for OperationOutcome.issue.code
+ format binding for OperationOutcome.issue.details
+Render page eRS-OperationOutcome-1
+Structure Page: Finish - ers-operationoutcome-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-Patient-1
+Creating structure for eRS-Patient-1
+CreateRow Patient( Patient )
+CreateRow Patient.identifier( Patient )
+CreateRow Patient.identifier.system( Patient )
+CreateRow Patient.identifier.value( Patient )
+ create Bindings table
+*** element Name for Patient.name.use has not been populated!
+*** element Name for Patient.telecom.system has not been populated!
+*** element Name for Patient.telecom.use has not been populated!
+*** element Name for Patient.address.use has not been populated!
+*** element Name for Patient.contact.relationship has not been populated!
+*** element Name for Patient.contact.name.use has not been populated!
+*** element Name for Patient.contact.telecom.system has not been populated!
+*** element Name for Patient.contact.telecom.use has not been populated!
+*** element Name for Patient.contact.address.use has not been populated!
+*** element Name for Patient.contact.address.type has not been populated!
+*** element Name for Patient.contact.gender has not been populated!
+*** element Name for Patient.communication.language has not been populated!
+ format binding for Patient.name.use
+ format binding for Patient.telecom.system
+ format binding for Patient.telecom.use
+ format binding for Patient.address.use
+ format binding for Patient.contact.relationship
+ format binding for Patient.contact.telecom.system
+ format binding for Patient.contact.telecom.use
+ format binding for Patient.contact.address.type
+ format binding for Patient.contact.gender
+ format binding for Patient.communication.language
+Render page eRS-Patient-1
+Structure Page: Finish - ers-patient-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-Practitioner-1
+Creating structure for eRS-Practitioner-1
+CreateRow Practitioner( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier( Practitioner )
+CreateRow Practitioner.identifier.system( Practitioner )
+CreateRow Practitioner.identifier.value( Practitioner )
+ create Bindings table
+*** element Name for Practitioner.name.use has not been populated!
+*** element Name for Practitioner.telecom.system has not been populated!
+*** element Name for Practitioner.telecom.use has not been populated!
+*** element Name for Practitioner.address.use has not been populated!
+*** element Name for Practitioner.address.type has not been populated!
+*** element Name for Practitioner.practitionerRole.role has not been populated!
+*** element Name for Practitioner.qualification.code has not been populated!
+ format binding for Practitioner.name.use
+ format binding for Practitioner.telecom.system
+ format binding for Practitioner.telecom.use
+ format binding for Practitioner.address.use
+ format binding for Practitioner.address.type
+ format binding for Practitioner.practitionerRole.role
+ format binding for Practitioner.qualification.code
+Render page eRS-Practitioner-1
+Structure Page: Finish - ers-practitioner-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : eRS-ReferralRequest-1
+Creating structure for eRS-ReferralRequest-1
+CreateRow ReferralRequest( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.extension( ReferralRequest )
+CreateRow ReferralRequest.status( ReferralRequest )
+CreateRow ReferralRequest.specialty( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.system( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.code( ReferralRequest )
+CreateRow ReferralRequest.specialty.coding.display( ReferralRequest )
+CreateRow ReferralRequest.priority( ReferralRequest )
+CreateRow ReferralRequest.priority.coding( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.system( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.code( ReferralRequest )
+CreateRow ReferralRequest.priority.coding.display( ReferralRequest )
+CreateRow ReferralRequest.patient( ReferralRequest )
+CreateRow ReferralRequest.patient.reference( ReferralRequest )
+CreateRow ReferralRequest.patient.display( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation.reference( ReferralRequest )
+CreateRow ReferralRequest.supportingInformation.display( ReferralRequest )
+ create Bindings table
+*** element Name for ReferralRequest.status has not been populated!
+*** element Name for ReferralRequest.specialty has not been populated!
+*** element Name for ReferralRequest.priority has not been populated!
+ format binding for ReferralRequest.status
+ format binding for ReferralRequest.specialty
+ format binding for ReferralRequest.priority
+Render page eRS-ReferralRequest-1
+Structure Page: Finish - ers-referralrequest-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : Extension-eRS-Appointment-1
+Creating structure for Extension-eRS-Appointment-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-Appointment-1
+Structure Page: Finish - extension-ers-appointment-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : Extension-eRS-AttachedBy-1
+Creating structure for Extension-eRS-AttachedBy-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-AttachedBy-1
+Structure Page: Finish - extension-ers-attachedby-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : Extension-eRS-ClinicalInfoFirstSubmitted-1
+Creating structure for Extension-eRS-ClinicalInfoFirstSubmitted-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-ClinicalInfoFirstSubmitted-1
+Structure Page: Finish - extension-ers-clinicalinfofirstsubmitted-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : Extension-eRS-ClinicalInfoLastUpdated-1
+Creating structure for Extension-eRS-ClinicalInfoLastUpdated-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-ClinicalInfoLastUpdated-1
+Structure Page: Finish - extension-ers-clinicalinfolastupdated-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.ReferralsForReviewWorklistResponse : Extension-eRS-ReferralsforReview-WorkListItem-1
+Creating structure for Extension-eRS-ReferralsforReview-WorkListItem-1
+CreateRow Extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueReference( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueDateTime( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueDateTime( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueDateTime( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueDateTime( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueBoolean( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueReference( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.extension( Extension )
+CreateRow Extension.extension.extension( Extension )
+CreateRow Extension.extension.url( Extension )
+CreateRow Extension.extension.valueCodeableConcept( Extension )
+CreateRow Extension.url( Extension )
+ create Bindings table
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+*** element Name for Extension.extension.valueCodeableConcept has not been populated!
+ format binding for Extension.extension.valueCodeableConcept
+ format binding for Extension.extension.valueCodeableConcept
+ format binding for Extension.extension.valueCodeableConcept
+Render page Extension-eRS-ReferralsforReview-WorkListItem-1
+Structure Page: Finish - extension-ers-referralsforreview-worklistitem-1
+Create example files
+Create resource files (Structure Definitions)
+Loading resources into resource store
+Structure Page: Start - Profile.Valueset : eRS-Specialty-ValueSet-1
+Creating structure for eRS-Specialty-ValueSet-1
+CreateRow ValueSet( ValueSet )
+CreateRow ValueSet.status( ValueSet )
+CreateRow ValueSet.publisher( ValueSet )
+CreateRow ValueSet.date( ValueSet )
+CreateRow ValueSet.description( ValueSet )
+CreateRow ValueSet.codeSystem( ValueSet )
+CreateRow ValueSet.codeSystem.modifierExtension( ValueSet )
+CreateRow ValueSet.codeSystem.system( ValueSet )
+CreateRow ValueSet.codeSystem.concept( ValueSet )
+CreateRow ValueSet.codeSystem.concept.extension( ValueSet )
+CreateRow ValueSet.codeSystem.concept.extension( ValueSet )
+CreateRow ValueSet.codeSystem.concept.extension( ValueSet )
+CreateRow ValueSet.codeSystem.concept.modifierExtension( ValueSet )
+CreateRow ValueSet.codeSystem.concept.code( ValueSet )
+CreateRow ValueSet.codeSystem.concept.display( ValueSet )
+CreateRow ValueSet.codeSystem.concept.designation( ValueSet )
+CreateRow ValueSet.codeSystem.concept.designation.modifierExtension( ValueSet )
+CreateRow ValueSet.codeSystem.concept.designation.value( ValueSet )
+ create Bindings table
+Render page eRS-Specialty-ValueSet-1
+Structure Page: Finish - ers-specialty-valueset-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.Valueset : Extension-eRS-EffectivefromDate-1
+Creating structure for Extension-eRS-EffectivefromDate-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-EffectivefromDate-1
+Structure Page: Finish - extension-ers-effectivefromdate-1
+Create example files
+Create resource files (Structure Definitions)
+Structure Page: Start - Profile.Valueset : Extension-eRS-EffectivetoDate-1
+Creating structure for Extension-eRS-EffectivetoDate-1
+CreateRow Extension( Extension )
+CreateRow Extension.url( Extension )
+CreateRow Extension.value[x]( Extension )
+ create Bindings table
+Render page Extension-eRS-EffectivetoDate-1
+Structure Page: Finish - extension-ers-effectivetodate-1
+Create example files
+Create resource files (Structure Definitions)
+Dictionary Page: IGResource.
+Loading resources into resource store
+ Create directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ClinicalReferralInformationQuery
+Loading resources into resource store
+ Create directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralRequestResponse
+Render dictionary page for eRS-Appointment-1
+Render dictionary page for eRS-DocumentReference-1
+Render dictionary page for eRS-HealthcareService-1
+Render dictionary page for eRS-Location-1
+Render dictionary page for eRS-OperationOutcome-1
+Render dictionary page for eRS-Patient-1
+Render dictionary page for eRS-Practitioner-1
+Render dictionary page for eRS-ReferralRequest-1
+Render dictionary page for Extension-eRS-Appointment-1
+Render dictionary page for Extension-eRS-AttachedBy-1
+Render dictionary page for Extension-eRS-ClinicalInfoFirstSubmitted-1
+Render dictionary page for Extension-eRS-ClinicalInfoLastUpdated-1
+Loading resources into resource store
+ Create directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralsForReviewWorklistQuery
+Loading resources into resource store
+ Create directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.ReferralsForReviewWorklistResponse
+Render dictionary page for eRS-Appointment-1
+Render dictionary page for eRS-DocumentReference-1
+Render dictionary page for eRS-FetchWorklist-List-1
+Render dictionary page for eRS-HealthcareService-1
+Render dictionary page for eRS-Location-1
+Render dictionary page for eRS-OperationOutcome-1
+Render dictionary page for eRS-Patient-1
+Render dictionary page for eRS-Practitioner-1
+Render dictionary page for eRS-ReferralRequest-1
+Render dictionary page for Extension-eRS-Appointment-1
+Render dictionary page for Extension-eRS-AttachedBy-1
+Render dictionary page for Extension-eRS-ClinicalInfoFirstSubmitted-1
+Render dictionary page for Extension-eRS-ClinicalInfoLastUpdated-1
+Render dictionary page for Extension-eRS-ReferralsforReview-WorkListItem-1
+Loading resources into resource store
+ Create directory: C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Profile.Valueset
+Render dictionary page for eRS-Specialty-ValueSet-1
+Render dictionary page for Extension-eRS-EffectivefromDate-1
+Render dictionary page for Extension-eRS-EffectivetoDate-1
+Loading resources into resource store
+Loading resources into resource store
+Operation Definition: Start eRS-ClinicalReferralInformation-Operation-1.
+Creating operation eRS-ClinicalReferralInformation-Operation-1
+Create Bindings table
+Render page eRS-ClinicalReferralInformation-Operation-1
+Operation Definition: Finish - eRS-ClinicalReferralInformation-Operation-1
+Create example files.
+Create resource files (Operation Definitions)
+Loading resources into resource store
+Loading resources into resource store
+Operation Definition: Start eRS-FetchWorklist-Operation-1.
+Creating operation eRS-FetchWorklist-Operation-1
+Create Bindings table
+ format binding for http://fhir.nhs.net/ValueSet/ers-referrallistselector-1
+ format binding for http://fhir.nhs.net/ValueSet/ers-assignedindicator-1
+ format binding for http://fhir.nhs.net/ValueSet/ers-specialty-1
+ format binding for http://fhir.nhs.net/ValueSet/ers-assignedindicator-1
+Render page eRS-FetchWorklist-Operation-1
+Operation Definition: Finish - eRS-FetchWorklist-Operation-1
+Create example files.
+Create resource files (Operation Definitions)
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Valueset Page: Start - Appointment Status
+Creating valueset for Appointment Status - http://fhir.nhs.net/ValueSet/appointment-status-1
+*** Appointment Status has no Copyright description!
+     Get Summary table
+     Get Content Logical Definition
+Render page appointment-status-1
+Valueset Page: Finish - appointment-status-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS-APIErrorCode-1
+Creating valueset for eRS-APIErrorCode-1 - http://fhir.nhs.net/ValueSet/ers-apierrorcode-1
+*** eRS-APIErrorCode-1 has no Copyright description!
+*** eRS-APIErrorCode-1 has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-apierrorcode-1
+Valueset Page: Finish - ers-apierrorcode-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Attachment Type
+Creating valueset for eRS Attachment Type - http://fhir.nhs.net/ValueSet/ers-attachmenttype-1
+*** eRS Attachment Type has no Copyright description!
+*** eRS Attachment Type has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-attachmenttype-1
+Valueset Page: Finish - ers-attachmenttype-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Priority
+Creating valueset for eRS Priority - http://fhir.nhs.net/ValueSet/ers-priority-1
+*** eRS Priority has no Copyright description!
+*** eRS Priority has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-priority-1
+Valueset Page: Finish - ers-priority-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Specialty
+Creating valueset for eRS Specialty - http://fhir.nhs.net/ValueSet/ers-specialty-1
+*** eRS Specialty has no Copyright description!
+*** eRS Specialty has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page ers-specialty-1
+Valueset Page: Finish - ers-specialty-1
+Create resource files (ValueSets)
+Valueset Page: Start - Referral Status
+Creating valueset for Referral Status - http://fhir.nhs.net/ValueSet/referral-status-1
+*** Referral Status has no Copyright description!
+     Get Summary table
+     Get Content Logical Definition
+Render page referral-status-1
+Valueset Page: Finish - referral-status-1
+Create resource files (ValueSets)
+Loading resources into resource store
+Valueset Page: Start - eRS Assigned Indicator
+Creating valueset for eRS Assigned Indicator - http://fhir.nhs.net/ValueSet/ers-assignedindicator-1
+*** eRS Assigned Indicator has no Copyright description!
+*** eRS Assigned Indicator has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-assignedindicator-1
+Valueset Page: Finish - ers-assignedindicator-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Referral List Selector
+Creating valueset for eRS Referral List Selector - http://fhir.nhs.net/ValueSet/ers-referrallistselector-1
+*** eRS Referral List Selector has no Copyright description!
+*** eRS Referral List Selector has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-referrallistselector-1
+Valueset Page: Finish - ers-referrallistselector-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Specialty
+Creating valueset for eRS Specialty - http://fhir.nhs.net/ValueSet/ers-specialty-1
+*** eRS Specialty has no Copyright description!
+*** eRS Specialty has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page ers-specialty-1
+Valueset Page: Finish - ers-specialty-1
+Create resource files (ValueSets)
+Loading resources into resource store
+Valueset Page: Start - Appointment Status
+Creating valueset for Appointment Status - http://fhir.nhs.net/ValueSet/appointment-status-1
+*** Appointment Status has no Copyright description!
+     Get Summary table
+     Get Content Logical Definition
+Render page appointment-status-1
+Valueset Page: Finish - appointment-status-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS-APIErrorCode-1
+Creating valueset for eRS-APIErrorCode-1 - http://fhir.nhs.net/ValueSet/ers-apierrorcode-1
+*** eRS-APIErrorCode-1 has no Copyright description!
+*** eRS-APIErrorCode-1 has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-apierrorcode-1
+Valueset Page: Finish - ers-apierrorcode-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Attachment Type
+Creating valueset for eRS Attachment Type - http://fhir.nhs.net/ValueSet/ers-attachmenttype-1
+*** eRS Attachment Type has no Copyright description!
+*** eRS Attachment Type has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-attachmenttype-1
+Valueset Page: Finish - ers-attachmenttype-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Priority
+Creating valueset for eRS Priority - http://fhir.nhs.net/ValueSet/ers-priority-1
+*** eRS Priority has no Copyright description!
+*** eRS Priority has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-priority-1
+Valueset Page: Finish - ers-priority-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Request Context Status
+Creating valueset for eRS Request Context Status - http://fhir.nhs.net/ValueSet/ers-requestcontextstatus-1
+*** eRS Request Context Status has no Copyright description!
+*** eRS Request Context Status has no OID!
+     Get Summary table
+     Get concept values
+Render page ers-requestcontextstatus-1
+Valueset Page: Finish - ers-requestcontextstatus-1
+Create resource files (ValueSets)
+Valueset Page: Start - eRS Specialty
+Creating valueset for eRS Specialty - http://fhir.nhs.net/ValueSet/ers-specialty-1
+*** eRS Specialty has no Copyright description!
+*** eRS Specialty has no OID!
+     Get Summary table
+     Get Content Logical Definition
+Render page ers-specialty-1
+Valueset Page: Finish - ers-specialty-1
+Create resource files (ValueSets)
+Valueset Page: Start - Referral Status
+Creating valueset for Referral Status - http://fhir.nhs.net/ValueSet/referral-status-1
+*** Referral Status has no Copyright description!
+     Get Summary table
+     Get Content Logical Definition
+Render page referral-status-1
+Valueset Page: Finish - referral-status-1
+Create resource files (ValueSets)
+Loading resources into resource store
+Examples Index: Start
+Target examples directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Chapter.5.Examples created
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+examples.html created
+Examples Index: Finish
+ValueSets Index: Start
+Target ValueSets directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated\Chapter.7.Valuesets created
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+Loading resources into resource store
+valuesets.html created
+ValueSets Index: Finish
+Clear down xml in resources\ValueSets folder
+Clear down xml in resources\StructureDefinitions folder
+Clear down xml in resources\OperationDefinitions folder
+***Rendering complete. Output to directory C:\SVN\interop\Projects\FHIR\e-RS\DraftC\Generated***

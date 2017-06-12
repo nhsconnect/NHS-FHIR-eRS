@@ -1,0 +1,1 @@
+This Operation resource carries information on the Clinical Referral Information Query parameters. Note: the endpoint will only support GET (with parameters on URL) not POST.

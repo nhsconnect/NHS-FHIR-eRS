@@ -1,0 +1,15 @@
+{
+  "DMS_ONLINE"      :   "FALSE",
+  "DMS_ANALYTICS"   :   "UA-67795986-1",
+ "EXAMPLES_XML"       : "FALSE",
+  "EXAMPLES_JSON"     : "TRUE",
+  "VALUESETS_XML"     : "FALSE",
+  "VALUESETS_JSON"   : "TRUE",
+  "STRUCTURES_XML"   : "FALSE",
+  "STRUCTURES_JSON" : "TRUE",
+  "OPERATIONS_XML"   : "FALSE",
+  "OPERATIONS_JSON" : "TRUE",
+  "DMS_TITLE"		:   "FHIR Implementation Guide for the NHS e-Referral Service",
+  "DMS_VERSION"		:	"Version 1.0 : DRAFT C",
+  "SCHEMAS"			:	"TRUE"
+}
