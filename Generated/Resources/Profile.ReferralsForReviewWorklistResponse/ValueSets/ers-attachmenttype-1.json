@@ -17,6 +17,14 @@
       {
         "code": "PROVIDER",
         "display": "Provider"
+      },
+      {
+        "code": "ADVICE_REQUEST",
+        "display": "Advice Request"
+      },
+      {
+        "code": "GUIDANCE_RESPONSE",
+        "display": "Guidance Response"
       }
     ]
   }
