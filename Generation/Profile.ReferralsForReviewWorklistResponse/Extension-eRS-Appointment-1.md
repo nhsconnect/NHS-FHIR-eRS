@@ -1,1 +1,0 @@
-This extension has been constrained to support the requirements within the scope of the e-RS project.

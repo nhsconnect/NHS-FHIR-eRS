@@ -1,1 +1,0 @@
-This Value Set resource is constrained to support the requirements within the scope of the e-RS project.

@@ -1,1 +1,0 @@
-This OperationOutcome resource has been constrained to support the NHS e-Referral Service requirements.
