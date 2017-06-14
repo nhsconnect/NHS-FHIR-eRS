@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2016-10-19T13:47:59.712+01:00"
+    "lastUpdated": "2017-06-14T14:47:47.763+01:00"
   },
   "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklistitem-1",
   "name": "Extension-eRS-ReferralsforReview-WorkListItem-1",
@@ -39,7 +39,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension",
+          "path": "Element",
           "min": 0,
           "max": "*"
         },
@@ -47,25 +47,67 @@
           {
             "code": "Element"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -83,18 +125,50 @@
           ],
           "rules": "open"
         },
-        "short": "Extension",
-        "definition": "An Extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -103,10 +177,15 @@
         "name": "patient",
         "short": "Patient reference",
         "definition": "Patient reference ",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -114,25 +193,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -154,7 +275,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -163,18 +284,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -191,7 +330,28 @@
           }
         ],
         "fixedUri": "patient",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -221,7 +381,28 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -231,12 +412,17 @@
       {
         "path": "Extension.extension",
         "name": "priority ",
-        "short": "Priority ",
+        "short": "priority ",
         "definition": "priority ",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -244,25 +430,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -284,7 +512,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -293,18 +521,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -321,7 +567,28 @@
           }
         ],
         "fixedUri": "priority",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -330,7 +597,7 @@
       },
       {
         "path": "Extension.extension.valueCodeableConcept",
-        "short": "Priority code",
+        "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "min": 1,
         "max": "1",
@@ -344,6 +611,23 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "binding": {
           "strength": "required",
           "description": "e-RS Priority codes",
@@ -352,6 +636,10 @@
           }
         },
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -363,10 +651,15 @@
         "name": "appointmentStart",
         "short": "Appointment start date and time ",
         "definition": "Appointment start date and time ",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -374,25 +667,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -414,7 +749,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -423,18 +758,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -451,7 +804,28 @@
           }
         ],
         "fixedUri": "Appointment start date time",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -474,7 +848,28 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -486,10 +881,15 @@
         "name": "dateWhenBookingMade",
         "short": "Date and time the booking was made",
         "definition": "Date and time the booking was made",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -497,25 +897,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -537,7 +979,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -546,18 +988,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -574,7 +1034,28 @@
           }
         ],
         "fixedUri": "Date First Booking Made",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -597,7 +1078,28 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -609,10 +1111,15 @@
         "name": "clinicalInfoFirstSubmitted",
         "short": "Date and time the clinical information was first submitted",
         "definition": "Date and time the clinical information was first submitted",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -620,25 +1127,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -660,7 +1209,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -669,18 +1218,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -697,7 +1264,28 @@
           }
         ],
         "fixedUri": "Clinical info first submitted",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -720,7 +1308,28 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -732,10 +1341,15 @@
         "name": "clinicalInfoLastUpdated",
         "short": "Date and time the clinical information was last updated",
         "definition": "Date and time the clinical information was last updated",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -743,25 +1357,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -783,7 +1439,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -792,18 +1448,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -820,7 +1494,28 @@
           }
         ],
         "fixedUri": "clinicalInfoLastUpdated",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -829,7 +1524,7 @@
       },
       {
         "path": "Extension.extension.valueDateTime",
-        "short": "Date and time the clinical information was last updated",
+        "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "min": 0,
         "max": "1",
@@ -843,7 +1538,28 @@
             "code": "dateTime"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -855,10 +1571,15 @@
         "name": "clinicalInfoPrinted",
         "short": "Has the clinical information been printed",
         "definition": "Has the clinical information been printed",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -866,25 +1587,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -906,7 +1669,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -915,18 +1678,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -943,7 +1724,28 @@
           }
         ],
         "fixedUri": "Clinical info printed",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -966,7 +1768,28 @@
             "code": "boolean"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -978,10 +1801,15 @@
         "name": "allocatedClinician",
         "short": "Reference to the allocated clinician for the referral",
         "definition": "Reference to the allocated clinician for the referral",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -989,25 +1817,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -1029,7 +1899,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1038,18 +1908,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -1066,7 +1954,28 @@
           }
         ],
         "fixedUri": "Allocated clinician",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1095,7 +2004,28 @@
             ]
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1107,10 +2037,15 @@
         "name": "requestContextStatus",
         "short": "Request context status",
         "definition": "Request context status",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1118,25 +2053,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -1158,7 +2135,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1167,18 +2144,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -1195,7 +2190,28 @@
           }
         ],
         "fixedUri": "Request context status",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1218,6 +2234,23 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "binding": {
           "strength": "required",
           "description": "request context valueset",
@@ -1228,6 +2261,10 @@
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": "N/A"
           }
         ]
@@ -1235,12 +2272,17 @@
       {
         "path": "Extension.extension",
         "name": "specialty",
-        "short": "Specialty",
+        "short": "specialty",
         "definition": "specialty",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
         "min": 1,
         "max": "1",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1248,25 +2290,67 @@
           {
             "code": "Extension"
           }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
         ]
       },
       {
         "path": "Extension.extension.id",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "xml:id (or equivalent in JSON)",
         "definition": "unique id for the element within a resource (for internal references).",
+        "comments": "RFC 4122",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
             "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
           }
         ],
         "mapping": [
@@ -1288,7 +2372,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1297,18 +2381,36 @@
             "code": "Extension"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -1325,7 +2427,28 @@
           }
         ],
         "fixedUri": "specialty",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1334,7 +2457,7 @@
       },
       {
         "path": "Extension.extension.valueCodeableConcept",
-        "short": "Specialty",
+        "short": "Value of extension",
         "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "min": 1,
         "max": "1",
@@ -1348,6 +2471,23 @@
             "code": "CodeableConcept"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "binding": {
           "strength": "required",
           "description": "specialty",
@@ -1358,15 +2498,16 @@
         "mapping": [
           {
             "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
             "map": "N/A"
           }
         ]
       },
       {
         "path": "Extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "short": "identifies the meaning of the extension",
         "definition": "Source of the definition for the extension code - a logical name or a URL.",
         "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
@@ -1383,7 +2524,28 @@
           }
         ],
         "fixedUri": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklist-1",
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1502,7 +2664,28 @@
             "code": "Meta"
           }
         ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-expression",
+                "valueString": "children()"
+              }
+            ],
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
         "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
           {
             "identity": "rim",
             "map": "N/A"
@@ -1537,9 +2720,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "patient"
       },
       {
@@ -1570,9 +2750,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "priority"
       },
       {
@@ -1601,9 +2778,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Appointment start date time"
       },
       {
@@ -1627,9 +2801,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Date First Booking Made"
       },
       {
@@ -1652,9 +2823,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Clinical info first submitted"
       },
       {
@@ -1676,9 +2844,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "clinicalInfoLastUpdated"
       },
       {
@@ -1699,9 +2864,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Clinical info printed"
       },
       {
@@ -1724,9 +2886,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Allocated clinician"
       },
       {
@@ -1756,9 +2915,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "Request context status"
       },
       {
@@ -1788,9 +2944,6 @@
       },
       {
         "path": "Extension.extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "specialty"
       },
       {
@@ -1811,9 +2964,6 @@
       },
       {
         "path": "Extension.url",
-        "representation": [
-          "xmlAttr"
-        ],
         "fixedUri": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklist-1"
       },
       {
