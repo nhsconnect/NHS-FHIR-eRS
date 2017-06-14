@@ -17,5 +17,13 @@
 			<code value="PROVIDER"/>
 			<display value="Provider"/>
 		</concept>
+		<concept>
+			<code value="ADVICE_REQUEST"/>
+			<display value="Advice Request"/>
+		</concept>
+		<concept>
+			<code value="GUIDANCE_RESPONSE"/>
+			<display value="Guidance Response"/>
+		</concept>
 	</codeSystem>
 </ValueSet>

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2016-10-19T13:47:59.712+01:00" />
+    <lastUpdated value="2017-06-13T14:52:00.014+01:00" />
   </meta>
   <url value="http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklistitem-1" />
   <name value="Extension-eRS-ReferralsforReview-WorkListItem-1" />
@@ -32,29 +32,57 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension" />
+        <path value="Element" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Element" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -66,50 +94,102 @@
         <discriminator value="url" />
         <rules value="open" />
       </slicing>
-      <short value="Extension" />
-      <definition value="An Extension" />
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension" />
       <name value="patient" />
       <short value="Patient reference" />
       <definition value="Patient reference " />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -125,21 +205,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -154,6 +247,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="patient" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -176,6 +283,20 @@
         <profile value="http://fhir.nhs.net/StructureDefinition/ers-patient-1" />
         <aggregation value="contained" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -184,34 +305,65 @@
     <element>
       <path value="Extension.extension" />
       <name value="priority " />
-      <short value="Priority " />
+      <short value="priority " />
       <definition value="priority " />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -227,21 +379,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -256,6 +421,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="priority" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -263,7 +442,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueCodeableConcept" />
-      <short value="Priority code" />
+      <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="1" />
       <max value="1" />
@@ -275,6 +454,16 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <binding>
         <strength value="required" />
         <description value="e-RS Priority codes" />
@@ -282,6 +471,10 @@
           <reference value="http://fhir.nhs.net/ValueSet/ers-priority-1" />
         </valueSetReference>
       </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -292,32 +485,63 @@
       <name value="appointmentStart" />
       <short value="Appointment start date and time " />
       <definition value="Appointment start date and time " />
-      <min value="1" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -333,21 +557,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -362,6 +599,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Appointment start date time" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -381,6 +632,20 @@
       <type>
         <code value="dateTime" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -391,32 +656,63 @@
       <name value="dateWhenBookingMade" />
       <short value="Date and time the booking was made" />
       <definition value="Date and time the booking was made" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -432,21 +728,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -461,6 +770,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Date First Booking Made" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -480,6 +803,20 @@
       <type>
         <code value="dateTime" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -490,32 +827,63 @@
       <name value="clinicalInfoFirstSubmitted" />
       <short value="Date and time the clinical information was first submitted" />
       <definition value="Date and time the clinical information was first submitted" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -531,21 +899,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -560,6 +941,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Clinical info first submitted" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -579,6 +974,20 @@
       <type>
         <code value="dateTime" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -589,32 +998,63 @@
       <name value="clinicalInfoLastUpdated" />
       <short value="Date and time the clinical information was last updated" />
       <definition value="Date and time the clinical information was last updated" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -630,21 +1070,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -659,6 +1112,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="clinicalInfoLastUpdated" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -666,7 +1133,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueDateTime" />
-      <short value="Date and time the clinical information was last updated" />
+      <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="0" />
       <max value="1" />
@@ -678,6 +1145,20 @@
       <type>
         <code value="dateTime" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -688,32 +1169,63 @@
       <name value="clinicalInfoPrinted" />
       <short value="Has the clinical information been printed" />
       <definition value="Has the clinical information been printed" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -729,21 +1241,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -758,6 +1283,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Clinical info printed" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -777,6 +1316,20 @@
       <type>
         <code value="boolean" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -787,32 +1340,63 @@
       <name value="allocatedClinician" />
       <short value="Reference to the allocated clinician for the referral" />
       <definition value="Reference to the allocated clinician for the referral" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -828,21 +1412,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -857,6 +1454,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Allocated clinician" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -878,6 +1489,20 @@
         <profile value="http://fhir.nhs.net/StructureDefinition/ers-practitioner-1" />
         <aggregation value="contained" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -888,32 +1513,63 @@
       <name value="requestContextStatus" />
       <short value="Request context status" />
       <definition value="Request context status" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -929,21 +1585,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -958,6 +1627,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="Request context status" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -977,6 +1660,16 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <binding>
         <strength value="required" />
         <description value="request context valueset" />
@@ -986,40 +1679,75 @@
       </binding>
       <mapping>
         <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element>
       <path value="Extension.extension" />
       <name value="specialty" />
-      <short value="Specialty" />
+      <short value="specialty" />
       <definition value="specialty" />
+      <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
       <min value="1" />
       <max value="1" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.id" />
-      <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
       <definition value="unique id for the element within a resource (for internal references)." />
+      <comments value="RFC 4122" />
       <min value="0" />
       <max value="1" />
       <base>
-        <path value="Extension.id" />
+        <path value="Element.id" />
         <min value="0" />
         <max value="1" />
       </base>
       <type>
         <code value="id" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -1035,21 +1763,34 @@
       <min value="0" />
       <max value="*" />
       <base>
-        <path value="Extension.extension" />
+        <path value="Element.extension" />
         <min value="0" />
         <max value="*" />
       </base>
       <type>
         <code value="Extension" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
       </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -1064,6 +1805,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="specialty" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1071,7 +1826,7 @@
     </element>
     <element>
       <path value="Extension.extension.valueCodeableConcept" />
-      <short value="Specialty" />
+      <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <min value="1" />
       <max value="1" />
@@ -1083,6 +1838,16 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
       <binding>
         <strength value="required" />
         <description value="specialty" />
@@ -1092,12 +1857,15 @@
       </binding>
       <mapping>
         <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
         <map value="N/A" />
       </mapping>
     </element>
     <element>
       <path value="Extension.url" />
-      <representation value="xmlAttr" />
       <short value="identifies the meaning of the extension" />
       <definition value="Source of the definition for the extension code - a logical name or a URL." />
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #." />
@@ -1112,6 +1880,20 @@
         <code value="uri" />
       </type>
       <fixedUri value="http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklist-1" />
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1227,6 +2009,20 @@
       <type>
         <code value="Meta" />
       </type>
+      <condition value="ele-1" />
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-expression">
+          <valueString value="children()" />
+        </extension>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
       <mapping>
         <identity value="rim" />
         <map value="N/A" />
@@ -1256,7 +2052,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="patient" />
     </element>
     <element>
@@ -1281,7 +2076,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="priority" />
     </element>
     <element>
@@ -1303,12 +2097,10 @@
       <name value="appointmentStart" />
       <short value="Appointment start date and time " />
       <definition value="Appointment start date and time " />
-      <min value="1" />
       <max value="1" />
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Appointment start date time" />
     </element>
     <element>
@@ -1330,7 +2122,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Date First Booking Made" />
     </element>
     <element>
@@ -1351,7 +2142,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Clinical info first submitted" />
     </element>
     <element>
@@ -1371,7 +2161,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="clinicalInfoLastUpdated" />
     </element>
     <element>
@@ -1390,7 +2179,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Clinical info printed" />
     </element>
     <element>
@@ -1411,7 +2199,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Allocated clinician" />
     </element>
     <element>
@@ -1435,7 +2222,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="Request context status" />
     </element>
     <element>
@@ -1463,7 +2249,6 @@
     </element>
     <element>
       <path value="Extension.extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="specialty" />
     </element>
     <element>
@@ -1482,7 +2267,6 @@
     </element>
     <element>
       <path value="Extension.url" />
-      <representation value="xmlAttr" />
       <fixedUri value="http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklist-1" />
     </element>
     <element>

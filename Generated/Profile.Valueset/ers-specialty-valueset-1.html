@@ -9,7 +9,7 @@
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
-			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6179.25752" />
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6256.31052" />
 		
 			<link href="../dist/css/fhir.css" rel="stylesheet" />
 	 
@@ -152,8 +152,8 @@
 											<li ><a href="#extensionsTab" data-toggle="tab">Extensions</a></li>
 										
 										
+											<li><a href="#bindingsTab" data-toggle="tab">Bindings</a></li>
 										
-											<li class ="disabled"><a >Bindings</a></li>
 																				
 										
 											<li class ="disabled"><a>Examples</a></li>
@@ -215,6 +215,83 @@
 										</div>
 									   
 									
+										<div class='well tab-pane' id="bindingsTab">
+									   
+									   		<div class="panel panel - default">
+												<table xmlns="http://www.w3.org/1999/xhtml">
+  <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+    <th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px">
+      <span title="The path of the element">Path</span>
+    </th>
+    <th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px">
+      <span title="The name of the valueSet">Name</span>
+    </th>
+    <th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px">
+      <span title="How closely the valueSet should be followed.">Binding Strength</span>
+    </th>
+    <th class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; width:100px">
+      <span title="A value set specifies a set of codes drawn from one or more code systems.">ValueSet</span>
+    </th>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />ValueSet.identifier.use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/identifier-use">http://hl7.org/fhir/ValueSet/identifier-use</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />ValueSet.status</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">status</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/conformance-resource-status">http://hl7.org/fhir/ValueSet/conformance-resource-status</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />ValueSet.contact.telecom.system</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">system</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/contact-point-system">http://hl7.org/fhir/ValueSet/contact-point-system</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />ValueSet.contact.telecom.use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/contact-point-use">http://hl7.org/fhir/ValueSet/contact-point-use</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />ValueSet.compose.include.filter.op</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">op</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/filter-operator">http://hl7.org/fhir/ValueSet/filter-operator</a>
+    </td>
+  </tr>
+</table>
+											</div>
+									   
+										</div>
 
 									
 																										
@@ -243,7 +320,7 @@
 					<div id="explanatoryline">
                          <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
 						 <p>
-                        Copyright &copy; 2016 Health and Social Care Information Centre<br/>
+                        Copyright &copy; 2017 Health and Social Care Information Centre<br/>
 						NHS Digital is the trading name of the Health and Social Care Information Centre.
                     </p>
                     </div>

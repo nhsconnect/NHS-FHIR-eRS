@@ -9,7 +9,7 @@
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="author" content="HSCIC" />        
-			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6179.25752" />
+			<meta name="publisher version" content=	"FHIR-Furnace : 2.7.6256.31052" />
 		
 			<link href="../dist/css/fhir.css" rel="stylesheet" />
 	 
@@ -246,6 +246,17 @@
   </tr>
   <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
     <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.relatesTo.code</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">code</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/document-relationship-type">http://hl7.org/fhir/ValueSet/document-relationship-type</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
       <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.content.attachment.contentType</td>
     <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">contentType</td>
     <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
@@ -253,6 +264,61 @@
     </td>
     <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
       <a href="http://www.rfc-editor.org/bcp/bcp13.txt">http://www.rfc-editor.org/bcp/bcp13.txt</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.context.event</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">event</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#example">Example</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/v3-ActCode">http://hl7.org/fhir/ValueSet/v3-ActCode</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.context.facilityType</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">facilityType</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#example">Example</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/c80-facilitycodes">http://hl7.org/fhir/ValueSet/c80-facilitycodes</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.context.practiceSetting</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">practiceSetting</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#example">Example</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/c80-practice-codes">http://hl7.org/fhir/ValueSet/c80-practice-codes</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.context.related.identifier.use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">use</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#required">Required</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/identifier-use">http://hl7.org/fhir/ValueSet/identifier-use</a>
+    </td>
+  </tr>
+  <tr style="border: 0px; padding:0px; vertical-align: top; background-color: white;">
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(); background-repeat: repeat-y; ">
+      <img src="../dist/images/tbl_spacer.png" class="hierarchy" alt="." />DocumentReference.context.related.identifier.type</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">type</td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://www.hl7.org/fhir/DSTU2/terminologies.html#extensible">Extensible</a>
+    </td>
+    <td class="hierarchy" style="vertical-align:top; text-align:left; padding:0px 4px 0px 4px">
+      <a href="http://hl7.org/fhir/ValueSet/identifier-type">http://hl7.org/fhir/ValueSet/identifier-type</a>
     </td>
   </tr>
 </table>
@@ -311,7 +377,7 @@
 					<div id="explanatoryline">
                          <img src="../dist/images/explanatoryline.png" alt="Information and technology for better health and care" />
 						 <p>
-                        Copyright &copy; 2016 Health and Social Care Information Centre<br/>
+                        Copyright &copy; 2017 Health and Social Care Information Centre<br/>
 						NHS Digital is the trading name of the Health and Social Care Information Centre.
                     </p>
                     </div>
