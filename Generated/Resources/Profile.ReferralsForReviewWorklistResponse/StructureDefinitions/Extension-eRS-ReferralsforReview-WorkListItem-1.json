@@ -803,7 +803,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "Appointment start date time",
+        "fixedUri": "appointmentStart",
         "condition": [
           "ele-1"
         ],
@@ -1033,7 +1033,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "Clinical info first submitted",
+        "fixedUri": "clinicalInfoFirstSubmitted",
         "condition": [
           "ele-1"
         ],
@@ -1493,7 +1493,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "Clinical info printed",
+        "fixedUri": "clinicalInfoPrinted",
         "condition": [
           "ele-1"
         ],
@@ -1723,7 +1723,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "Allocated clinician",
+        "fixedUri": "allocatedClinician",
         "condition": [
           "ele-1"
         ],
@@ -1959,7 +1959,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "Request context status",
+        "fixedUri": "requestContextStatus",
         "condition": [
           "ele-1"
         ],
@@ -3014,7 +3014,7 @@
       },
       {
         "path": "Extension.extension.url",
-        "fixedUri": "Appointment start date time"
+        "fixedUri": "appointmentStart"
       },
       {
         "path": "Extension.extension.valueDateTime",
@@ -3036,7 +3036,7 @@
       },
       {
         "path": "Extension.extension.url",
-        "fixedUri": "Clinical info first submitted"
+        "fixedUri": "clinicalInfoFirstSubmitted"
       },
       {
         "path": "Extension.extension.valueDateTime",
@@ -3077,7 +3077,7 @@
       },
       {
         "path": "Extension.extension.url",
-        "fixedUri": "Clinical info printed"
+        "fixedUri": "clinicalInfoPrinted"
       },
       {
         "path": "Extension.extension.valueBoolean",
@@ -3099,7 +3099,7 @@
       },
       {
         "path": "Extension.extension.url",
-        "fixedUri": "Allocated clinician"
+        "fixedUri": "allocatedClinician"
       },
       {
         "path": "Extension.extension.valueReference",
@@ -3128,7 +3128,7 @@
       },
       {
         "path": "Extension.extension.url",
-        "fixedUri": "Request context status"
+        "fixedUri": "requestContextStatus"
       },
       {
         "path": "Extension.extension.valueCodeableConcept",
