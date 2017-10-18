@@ -7,23 +7,8 @@
   },
   "contained": [
     {
-      "resourceType": "Practitioner",
-      "id": "123456789012",
-      "meta": {
-        "profile": [
-          "http://fhir.nhs.net/StructureDefinition/ers-practitioner-1"
-        ]
-      },
-      "identifier": [
-        {
-          "system": "http://fhir.nhs.net/Id/sds-user-id",
-          "value": "123456789012"
-        }
-      ]
-    },
-    {
       "resourceType": "Patient",
-      "id": "9900002831",
+      "id": "1000000001",
       "meta": {
         "profile": [
           "http://fhir.nhs.net/StructureDefinition/ers-patient-1"
@@ -32,7 +17,7 @@
       "identifier": [
         {
           "system": "http://fhir.nhs.net/Id/nhs-number",
-          "value": "9900002831"
+          "value": "1000000001"
         }
       ]
     }
@@ -48,7 +33,7 @@
             {
               "url": "patient",
               "valueReference": {
-                "reference": "#9900002831"
+                "reference": "#1000000001"
               }
             },
             {
@@ -64,29 +49,15 @@
             },
             {
               "url": "appointmentStart",
-              "valueDateTime": "2016-08-12T19:23:53Z"
-            },
-            {
-              "url": "dateWhenBookingMade",
-              "valueDateTime": "2016-08-12T19:23:53Z"
+              "valueDateTime": "2017-10-05T08:00:00Z"
             },
             {
               "url": "clinicalInfoFirstSubmitted",
-              "valueDateTime": "2016-08-12T19:23:53Z"
-            },
-            {
-              "url": "clinicalInfoLastUpdated",
-              "valueDateTime": "2016-08-12T19:23:53Z"
+              "valueDateTime": "2017-10-03T13:30:48.861Z"
             },
             {
               "url": "clinicalInfoPrinted",
-              "valueBoolean": true
-            },
-            {
-              "url": "allocatedClinician",
-              "valueReference": {
-                "reference": "#123456789012"
-              }
+              "valueBoolean": false
             },
             {
               "url": "requestContextStatus",
@@ -106,8 +77,24 @@
                 "coding": [
                   {
                     "system": "http://fhir.nhs.net/ValueSet/ers-specialty-1",
-                    "code": "DERMATOLOGY",
-                    "display": "Dermatology"
+                    "code": "2WW",
+                    "display": "2WW"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "eReferralPathwayStart",
+              "valueDateTime": "2017-10-03T13:30:36.139Z"
+            },
+            {
+              "url": "referralType",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1",
+                    "code": "TRIAGE_DEFERRAL",
+                    "display": "Triage Deferral"
                   }
                 ]
               }
@@ -116,7 +103,89 @@
         }
       ],
       "item": {
-        "reference": "ReferralRequest/000234620011"
+        "reference": "ReferralRequest/000000070001"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklistitem-1",
+          "extension": [
+            {
+              "url": "patient",
+              "valueReference": {
+                "reference": "#1000000001"
+              }
+            },
+            {
+              "url": "priority",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.nhs.net/ValueSet/ers-priority-1",
+                    "code": "TWO_WEEK_WAIT",
+                    "display": "Two Week Wait"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "appointmentStart",
+              "valueDateTime": "2017-10-05T08:00:00Z"
+            },
+            {
+              "url": "clinicalInfoFirstSubmitted",
+              "valueDateTime": "2017-10-03T13:17:19.613Z"
+            },
+            {
+              "url": "clinicalInfoPrinted",
+              "valueBoolean": false
+            },
+            {
+              "url": "requestContextStatus",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.nhs.net/ValueSet/ers-requestcontextstatus-1",
+                    "code": "NEVER_REVIEWED",
+                    "display": "Never Reviewed"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "specialty",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.nhs.net/ValueSet/ers-specialty-1",
+                    "code": "2WW",
+                    "display": "2WW"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "eReferralPathwayStart",
+              "valueDateTime": "2017-10-03T13:16:57.813Z"
+            },
+            {
+              "url": "referralType",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1",
+                    "code": "APPOINTMENT",
+                    "display": "Appointment"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "item": {
+        "reference": "ReferralRequest/000000070000"
       }
     }
   ]
