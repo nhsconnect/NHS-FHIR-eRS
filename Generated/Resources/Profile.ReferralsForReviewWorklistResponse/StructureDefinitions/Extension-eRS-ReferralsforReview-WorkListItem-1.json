@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "meta": {
-    "lastUpdated": "2017-10-11T13:40:50.914+01:00"
+    "lastUpdated": "2017-10-23T11:25:20.372+01:00"
   },
   "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklistitem-1",
   "name": "Extension-eRS-ReferralsforReview-WorkListItem-1",
@@ -2729,7 +2729,7 @@
           "strength": "required",
           "description": "Referral Type",
           "valueSetReference": {
-            "reference": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1"
+            "reference": "http://fhir.nhs.net/ValueSet/ers-referraltype-1"
           }
         },
         "mapping": [
@@ -3214,7 +3214,7 @@
           "strength": "required",
           "description": "Referral Type",
           "valueSetReference": {
-            "reference": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1"
+            "reference": "http://fhir.nhs.net/ValueSet/ers-referraltype-1"
           }
         }
       },

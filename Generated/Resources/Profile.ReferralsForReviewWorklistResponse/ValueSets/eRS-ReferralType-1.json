@@ -3,12 +3,12 @@
   "meta": {
     "lastUpdated": "2016-08-03T00:00:00+01:00"
   },
-  "url": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1",
+  "url": "http://fhir.nhs.net/ValueSet/ers-referraltype-1",
   "name": "eRS-ReferralType-1",
   "status": "draft",
   "description": "A category assigned to reflect the priority of the Referral Request.",
   "codeSystem": {
-    "system": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1",
+    "system": "http://fhir.nhs.net/ValueSet/ers-referraltype-1",
     "concept": [
       {
         "code": "APPOINTMENT",
