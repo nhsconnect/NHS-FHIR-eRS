@@ -1,7 +1,7 @@
 entries:
 - title: eRS FHIR&reg; API
   product: eRS FHIR&reg; API
-  version: 
+  version: 1.0.0 draft
   levels: one
   folders:
 
