@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-02-28T10:13:04.362+00:00" />
+    <lastUpdated value="2018-03-02T10:39:03.816+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1" />
   <version value="1.0.0" />
@@ -175,7 +175,7 @@
       </mapping>
     </element>
     <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueReference" />
       <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
@@ -190,6 +190,10 @@
       <type>
         <code value="Reference" />
         <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -220,6 +224,10 @@
       <type>
         <code value="Reference" />
         <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1" />
       </type>
     </element>
   </differential>
