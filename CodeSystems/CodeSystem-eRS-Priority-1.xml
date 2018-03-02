@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<url value="https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1"/>
+	<url value="https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1"/>
 	<version value="1.0.0"/>
-	<name value="eRS Attachment Type"/>
+	<name value="eRS Priority"/>
 	<status value="draft"/>
 	<publisher value="NHS Digital"/>
 	<contact>
@@ -13,23 +13,19 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<purpose value="Code system used to indicate the type of attachment"/>
+	<purpose value="Priority"/>
 	<copyright value="2017 NHS Digital"/>
 	<content value="complete"/>
 	<concept>
-		<code value="REFERRER"/>
-		<display value="Referrer"/>
+		<code value="ROUTINE"/>
+		<display value="Routine"/>
 	</concept>
 	<concept>
-		<code value="PROVIDER"/>
-		<display value="Provider"/>
+		<code value="URGENT"/>
+		<display value="Urgent"/>
 	</concept>
 	<concept>
-		<code value="ADVICE_REQUEST"/>
-		<display value="Advice Request"/>
-	</concept>
-	<concept>
-		<code value="GUIDANCE_RESPONSE"/>
-		<display value="Guidance Response"/>
+		<code value="TWO_WEEK_WAIT"/>
+		<display value="2 Week Wait"/>
 	</concept>
 </CodeSystem>
