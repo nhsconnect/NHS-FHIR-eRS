@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-01T08:11:40.667+00:00" />
+    <lastUpdated value="2018-03-02T17:53:54.5+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralsforReview-WorkListItem-1" />
   <version value="1.0.0" />
@@ -309,6 +309,8 @@
       </base>
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1" />
+        <aggregation value="referenced" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2616,6 +2618,8 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:priority">
