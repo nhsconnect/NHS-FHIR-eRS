@@ -64,6 +64,12 @@ entries:
         - title: Bundle
           url: /resource_bundle.html
           output: web
+      - title: Referral Worklist
+        output: web
+        subfolderitems:
+        - title: References
+          url: /referralsworklist_references.html
+          output: web
       - title: Foundation
         output: web
         subfolderitems:

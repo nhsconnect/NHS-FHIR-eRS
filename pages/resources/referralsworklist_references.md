@@ -1,0 +1,51 @@
+---
+title: Referrals Worklist References
+keywords: resources, rest, resource
+tags: [rest,fhir]
+sidebar: foundations_sidebar
+permalink: referralsworklist_references.html
+summary: "References for the Referrals Worklist deliverable"
+---
+
+{% include custom/search.warnbanner.html %}
+
+
+
+|Profile| 
+|-------|
+| [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1) | 
+| [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1) | 
+| [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1) | 
+
+
+|ValueSet| 
+|-------|
+| [eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1) | 
+| [eRS-AppointmentStatus-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentStatus-1) | 
+| [ers-AssignedIndicator-1](https://fhir.nhs.uk/STU3/ValueSet/ers-AssignedIndicator-1) | 
+| [eRS-AttachmentType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1) | 
+| [eRS-Priority-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1) | 
+| [eRS-ReferralListSelector-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralListSelector-1) | 
+| [eRS-ReferralType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1) | 
+| [eRS-RequestContextStatus-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1) | 
+| [eRS-Specialty-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1) | 
+
+
+
+|CodeSystem| 
+|-------|
+| [eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1) | 
+| [eRS-AppointmentStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1) | 
+| [ers-AssignedIndicator-1](https://fhir.nhs.uk/STU3/CodeSystem/ers-AssignedIndicator-1) | 
+| [eRS-AttachmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1) | 
+| [eRS-Priority-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1) | 
+| [eRS-ReferralListSelector-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralListSelector-1) | 
+| [eRS-ReferralType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1) | 
+| [eRS-RequestContextStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1) | 
+| [eRS-Specialty-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1) | 
+
+|OperationDefinition| 
+|-------|
+| [eRS-DoSServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-DoSServiceSearch-Operation-1) | 
+| [eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1) | 
+
