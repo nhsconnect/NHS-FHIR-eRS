@@ -16,6 +16,14 @@ summary: "References for the Referrals Worklist deliverable"
 | [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1) | 
 | [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1) | 
 | [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1) | 
+| [eRS-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1) | 
+| [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) | 
+| [eRS-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1) | 
+| [eRS-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1) | 
+| [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1) | 
+| [eRS-ReferralsReview-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsReview-HealthcareService-1) | 
+| [eRS-Specialty-CodeSystem-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1) | 
+| [eRS-Specialty-ValueSet-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1) | 
 
 
 |ValueSet| 
@@ -44,8 +52,9 @@ summary: "References for the Referrals Worklist deliverable"
 | [eRS-RequestContextStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1) | 
 | [eRS-Specialty-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1) | 
 
+
 |OperationDefinition| 
 |-------|
-| [eRS-DoSServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-DoSServiceSearch-Operation-1) | 
-| [eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1) | 
+| [eRS-ClinicalReferralInformation-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-ClinicalReferralInformation-Operation-1) | 
+| [eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1) | 
 

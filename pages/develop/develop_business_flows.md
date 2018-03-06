@@ -1,7 +1,6 @@
 ---
 title: Business Flows 
 keywords: develop, build, access, security, business
-tags: [develop, flows]
 sidebar: foundations_sidebar
 permalink: develop_business_flows.html
 ---

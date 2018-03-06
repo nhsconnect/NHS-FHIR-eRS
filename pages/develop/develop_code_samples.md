@@ -1,7 +1,6 @@
 ---
 title: Code Samples
 keywords: develop, build, access, samples
-tags: [develop]
 sidebar: foundations_sidebar
 permalink: develop_code_samples.html
 ---
