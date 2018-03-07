@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-07T10:38:54.054+00:00" />
+    <lastUpdated value="2018-03-07T11:51:16.742+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1" />
   <version value="1.0.0" />
@@ -2365,6 +2365,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -3624,6 +3625,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
       <example>
         <label value="General" />
         <valueUri value="http://www.acme.com/identifiers/patient or urn:ietf:rfc:3986 if the Identifier.value itself is a full uri" />
@@ -5050,6 +5052,7 @@
       <path value="Location.identifier.system" />
       <short value="ODS Code" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
     </element>
     <element id="Location.identifier:ODSSiteCode.value">
       <path value="Location.identifier.value" />
@@ -5081,6 +5084,10 @@
     <element id="Location.identifier:OtherIdentifier.type">
       <path value="Location.identifier.type" />
       <max value="0" />
+    </element>
+    <element id="Location.identifier:OtherIdentifier.system">
+      <path value="Location.identifier.system" />
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
     </element>
     <element id="Location.identifier:OtherIdentifier.value">
       <path value="Location.identifier.value" />
