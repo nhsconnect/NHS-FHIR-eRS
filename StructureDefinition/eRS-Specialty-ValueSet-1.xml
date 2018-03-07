@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-07T09:16:21.944+00:00" />
+    <lastUpdated value="2018-03-07T12:57:29.948+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1" />
   <version value="1.0.0" />
@@ -1699,7 +1699,7 @@
       <short value="Additional representations for this concept" />
       <definition value="Additional representations for this concept when used in this value set - other languages, aliases, specialized purposes, used for particular purposes, etc." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="ValueSet.compose.include.concept.designation" />
         <min value="0" />
@@ -3214,6 +3214,10 @@
     <element id="ValueSet.compose.include.system">
       <path value="ValueSet.compose.include.system" />
       <fixedUri value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1" />
+    </element>
+    <element id="ValueSet.compose.include.concept.designation">
+      <path value="ValueSet.compose.include.concept.designation" />
+      <max value="0" />
     </element>
     <element id="ValueSet.compose.include.filter">
       <path value="ValueSet.compose.include.filter" />

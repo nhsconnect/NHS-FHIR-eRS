@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-07T11:44:56.001+00:00" />
+    <lastUpdated value="2018-03-07T12:13:45.545+00:00" />
   </meta>
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1" />
   <version value="1.0.0" />
