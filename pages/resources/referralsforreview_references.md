@@ -3,8 +3,8 @@ title: Referrals Worklist References
 keywords: resources, rest, resource
 tags: [rest,fhir]
 sidebar: foundations_sidebar
-permalink: referralsworklist_references.html
-summary: "References for the Referrals Worklist deliverable"
+permalink: referralsforreview_references.html
+summary: "References for the Referrals for Review deliverable"
 ---
 
 {% include custom/search.warnbanner.html %}
