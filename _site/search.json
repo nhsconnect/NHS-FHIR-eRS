@@ -651,7 +651,7 @@
 		"keywords": "development,overview",
 		"url": "started_registration.html",
 		"summary": "FHIR&amp;reg; eRS Service Search API journey outlines the approach of developing RESTful APIs and the journey taken to define and mature them.",
-		"content": "{% include important.html content=\"All phases outlined below are indicative and subject to on-going review.\" %}\n\n\n# Partner Registration #\n\nTo register an interest and gain access to the NHS e-RS API Development environments, \nplease complete the Contact US request form in the main NHS e-Referral Service website, selecting the ‘Integration’ category.\n\nThis form can be directly selected using the following link: [Contact Us](https://www.digital.nhs.uk/referrals/contact-us)"
+		"content": "{% include important.html content=\"All phases outlined below are indicative and subject to on-going review.\" %}\n\n\n# Partner Registration #\n\nTo register an interest and gain access to the NHS e-RS API Development environments, \nplease complete the Contact us request form in the main NHS e-Referral Service website, selecting the ‘Integration’ category.\n\nThis form can be directly selected using the following link: [Contact Us](https://www.digital.nhs.uk/referrals/contact-us)"
 		
 	}
 	,

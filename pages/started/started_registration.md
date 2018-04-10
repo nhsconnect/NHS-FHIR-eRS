@@ -13,6 +13,6 @@ summary: FHIR&reg; eRS Service Search API journey outlines the approach of devel
 # Partner Registration #
 
 To register an interest and gain access to the NHS e-RS API Development environments, 
-please complete the Contact US request form in the main NHS e-Referral Service website, selecting the ‘Integration’ category.
+please complete the Contact us request form in the main NHS e-Referral Service website, selecting the ‘Integration’ category.
 
 This form can be directly selected using the following link: [Contact Us](https://www.digital.nhs.uk/referrals/contact-us)
