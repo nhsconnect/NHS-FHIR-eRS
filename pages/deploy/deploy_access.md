@@ -13,7 +13,7 @@ summary: "The Access page shows developers and users of the API how to access an
 
 Access at the Deploy stage of API development needs to include consideration of:
 
-- Report & Monitoring
+- Report and Monitoring
 - Traffic Management
 - Endpoints
 
