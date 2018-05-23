@@ -12,160 +12,62 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-      
-  - title: Getting Started
+
+  - title: Endpoints
     output: web
     folderitems:
-    - title: Development Journey
-      url: /started_journey.html
-      output: web
-    - title: Capabilities
-      url: /started_capabilities.html
-      output: web
-    - title: Partner Registration
-      url: /started_registration.html
+    - title: Catalogue
+      url: /explore_endpoint_catalogue.html
+      output: web 
+      subfolders:
+      - title: Retrieve Worklist
+        output: web
+        subfolderitems:
+        - title: DSTU2
+          url: /fetch_worklist_resources_dstu2.html
+          output: web	
+        - title: STU3 (Draft)
+          url: /fetch_worklist_resources_stu3.html
+          output: web
+      - title: Retrieve Reference Data
+        output: web
+        subfolderitems:
+        - title: Resources
+          url: /referencedata_resources.html
+          output: web
+        - title: Example
+          url: /referencedata_examples.html
+          output: web    
+      - title: Retrieve Referral Request
+        output: web
+        subfolderitems:
+        - title: Resources
+          url: /referralrequest_resources.html
+          output: web
+        - title: Example
+          url: /referralrequest_examples.html
+          output: web             
+      - title: Retrieve Clinical Information
+        output: web
+        subfolderitems:
+        - title: Resources
+          url: /retrieveci_resources.html
+          output: web
+        - title: Example
+          url: /retrieveci_examples.html
+          output: web
+           
+    #      subfolderitems:
+    #      - title: CapabilityStatement
+    #        url: /resources_capabilitystatement.html
+    #        output: web
+  
+  - title: Help & Support
+    output: web
+    folderitems:
+    - title: Frequently Asked Questions (FAQ)
+      url: /faq.html
       output: web
     - title: Glossary
       url: /started_glossary.html
       output: web
-      
-  - title: Explore
-    output: web
-    folderitems:
-    - title: Overview
-      url: /explore.html
-      output: web
-    - title: API Environments
-      url: /explore_api_environment.html
-      output: web
-    - title: Endpoint Catalogue
-      url: /explore_endpoint_catalogue.html
-      output: web
-
-  - title: Resources
-    output: web
-    folderitems:
-    - title: Overview
-      url: /resources.html
-      output: web  
-      subfolders:
-      - title: Service Search
-        output: web
-        subfolderitems:
-        - title: References
-          url: /servicesearch_references.html
-          output: web
-        - title: HealthcareService
-          url: /resource_healthcareservice.html
-          output: web
-        - title: Location
-          url: /resource_location.html
-          output: web
-        - title: Bundle
-          url: /resource_bundle.html
-          output: web
-      - title: Referrals for Review
-        output: web
-        subfolderitems:
-        - title: References
-          url: /referralsforreview_references.html
-          output: web
-      - title: Foundation
-        output: web
-        subfolderitems:
-        - title: CapabilityStatement
-          url: /resources_capabilitystatement.html
-          output: web
-      - title: API Guidance | FHIR&reg;
-        output: web
-        subfolderitems:
-        - title: API Codes
-          url: /explore_api_codes.html
-          output: web
-        - title: Search Parameters
-          url: /explore_search_parameters.html
-          output: web
-        - title: Open Source
-          url: /explore_fhir_open_source_guidance.html
-          output: web
-        - title: Reference
-          url: /explore_reference.html
-          output: web
-   # - title: References
-   #   url: /project_references.html
-   #   output: web
-      
-  - title: Develop
-    output: web
-    folderitems:
-    - title: Business Flows
-      url: /develop_business_flows.html
-      output: web
-    - title: Code Samples
-      url: /develop_code_samples.html
-      output: web
-    - title: Test Data
-      url: /develop_test_data.html
-      output: web      
-
- 
-#  - title: Test
-#    output: web
-#    folderitems:
-#    - title: Overview
-#      url: /test.html
-#      output: web
-#    - title: Patterns / Topology
-#      url: /test_patterns.html
-#      output: web
-#    - title: Access
-#      url: /test_access.html
-#      output: web
-#    - title: Security
-#      url: /test_security.html
-#      output: web
-#    - title: Test Data
-#      url: /test_data.html
-#      output: web
-
-  - title: Assure
-    output: web
-    folderitems:
-    - title: Business Partners
-      url: /assure_partners.html
-      output: web
-    - title: Assurance Approach
-      url: /assure_approach.html
-      output: web
-    - title: Path-To-Live
-      url: /assure_pathtolive.html
-      output: web
-
-  - title: Deploy
-    output: web
-    folderitems:
- #   - title: Overview
- #     url: /deploy.html
- #     output: web
-    - title: Release Methodology
-      url: /deploy_methodology.html
-      output: web
-
-#  - title: Tags
-#    output: web
-#    folderitems:
-#    - title: Introduction
-#      url: /tag_overview.html
-#      output: web
-#    - title: FHIR&reg;
-#      url: /tag_fhir.html
-#      output: web
-#    - title: Design
-#      url: /tag_design.html
-#      output: web
-#    - title: Development
-#      url: /tag_development.html
-#      output: web
-#    - title: Support
-#      url: /tag_support.html
-#      output: web

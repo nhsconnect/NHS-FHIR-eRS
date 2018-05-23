@@ -90,7 +90,6 @@ defaults:
 
 sidebars:
 - overview_sidebar
-- overview_sidebar
 - designprinciples_sidebar
 - accessrecord_sidebar
 - appointments_sidebar
@@ -102,9 +101,9 @@ description: "The Care Connect RESTful APIs support the delivery of care by open
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://nhsconnect.github.io/NHS-FHIR-eRS-API-ServiceSearch
+url: https://nhsconnect.github.io/NHS-FHIR-eRS-API
 
-repository: nhsconnect/NHS-FHIR-eRS-API-ServiceSearch
+repository: nhsconnect/NHS-FHIR-eRS-API
 
 gist:
   noscript: false
