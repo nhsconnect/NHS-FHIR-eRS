@@ -23,7 +23,7 @@ entries:
       - title: Retrieve Worklist
         output: web
         subfolderitems:
-        - title: DSTU2
+        - title: DSTU2 (Live)
           url: /fetch_worklist_resources_dstu2.html
           output: web	
         - title: STU3 (Draft)
@@ -32,29 +32,29 @@ entries:
       - title: Retrieve Reference Data
         output: web
         subfolderitems:
-        - title: Resources
-          url: /referencedata_resources.html
+        - title: DSTU2 (Live)
+          url: /referencedata_resources_dstu2.html
           output: web
-        - title: Example
-          url: /referencedata_examples.html
+        - title: STU3 (Draft)
+          url: /referencedata_resources_stu3.html
           output: web    
       - title: Retrieve Referral Request
         output: web
         subfolderitems:
-        - title: Resources
-          url: /referralrequest_resources.html
+        - title: DSTU2 (Live)
+          url: /referralrequest_resources_dstu2.html
           output: web
-        - title: Example
-          url: /referralrequest_examples.html
+        - title: STU3 (Draft)
+          url: /referralrequest_resources_stu3.html
           output: web             
       - title: Retrieve Clinical Information
         output: web
         subfolderitems:
-        - title: Resources
-          url: /retrieveci_resources.html
+        - title: DSTU2 (Live)
+          url: /retrieveci_resources_dstu2.html
           output: web
-        - title: Example
-          url: /retrieveci_examples.html
+        - title: STU3 (Draft)
+          url: /retrieveci_resources_stu3.html
           output: web
            
     #      subfolderitems:

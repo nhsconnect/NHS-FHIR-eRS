@@ -1,7 +1,6 @@
 ---
 title: Fetch Worklist Resources
 keywords: rest, resource
-tags: [rest,fhir]
 sidebar: foundations_sidebar
 permalink: fetch_worklist_resources_stu3.html
 summary: "Links to the Fetch Worklist endpoint profiles"

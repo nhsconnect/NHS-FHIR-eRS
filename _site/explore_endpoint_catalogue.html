@@ -207,7 +207,7 @@
                     
                     
                     
-                    <li><a href="fetch_worklist_resources_dstu2.html">DSTU2</a></li>
+                    <li><a href="fetch_worklist_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
@@ -228,13 +228,13 @@
                     
                     
                     
-                    <li><a href="referencedata_resources.html">Resources</a></li>
+                    <li><a href="referencedata_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="referencedata_examples.html">Example</a></li>
+                    <li><a href="referencedata_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -249,13 +249,13 @@
                     
                     
                     
-                    <li><a href="referralrequest_resources.html">Resources</a></li>
+                    <li><a href="referralrequest_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="referralrequest_examples.html">Example</a></li>
+                    <li><a href="referralrequest_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -270,13 +270,13 @@
                     
                     
                     
-                    <li><a href="retrieveci_resources.html">Resources</a></li>
+                    <li><a href="retrieveci_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="retrieveci_examples.html">Example</a></li>
+                    <li><a href="retrieveci_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -371,72 +371,56 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="endpoint-catalogue">Endpoint Catalogue</h2>
 
+<p>For further API endpoint information click <a href="https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_catalogue.html">here</a></p>
+
 <table>
   <thead>
     <tr>
       <th>Id</th>
       <th>Name</th>
       <th>Family</th>
-      <th>Verb</th>
-      <th>URI</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>A001</td>
-      <td><a href="explore_a001.html">Create Professional Session</a></td>
+      <td>Create Professional Session</td>
       <td>Session</td>
-      <td>POST</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/createProfessionalSessionUsingPOST">/v1/ProfessionalSession</a></td>
     </tr>
     <tr>
       <td>A002</td>
-      <td><a href="explore_a002.html">Professional Session Select Role</a></td>
+      <td>Professional Session Select Role</td>
       <td>Session</td>
-      <td>PUT</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/updateProfessionalSessionSelectRoleUsingPUT">/v1/ProfessionalSession/{sessionKey}</a></td>
     </tr>
     <tr>
       <td>A003</td>
-      <td><a href="explore_a003.html">Delete Professional Session	</a></td>
+      <td>Delete Professional Session</td>
       <td>Session</td>
-      <td>DELETE</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/deleteProfessionalSessionUsingDELETE">/v1/ProfessionalSession/{sessionKey}</a></td>
     </tr>
     <tr>
       <td>A004</td>
-      <td><a href="explore_a004.html">Retrieve Reference Data</a></td>
+      <td>Retrieve Reference Data</td>
       <td>Reference Data</td>
-      <td>GET</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/valueset/getValueSetUsingGET">/v1/ValueSet/{valueSetId}n</a></td>
     </tr>
     <tr>
       <td>A005</td>
-      <td><a href="explore_a005.html">Retrieve Referral Request</a></td>
+      <td>Retrieve Referral Request</td>
       <td>Clinical Referral Information</td>
-      <td>GET</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/referralrequest/getUsingGET">/v1/ReferralRequest/{id}</a></td>
     </tr>
     <tr>
       <td>A006</td>
-      <td><a href="explore_a006.html">Retrieve Attachment</a></td>
+      <td>Retrieve Attachment</td>
       <td>Clinical Referral Information</td>
-      <td>GET</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/binary/getAttachmentContentBodyUsingGET">/v1/Binary/att-{referralRequestAttachmentId</a></td>
     </tr>
     <tr>
       <td>A007</td>
-      <td><a href="explore_a007.html">Retrieve Clinical Information</a></td>
+      <td>Retrieve Clinical Information</td>
       <td>Clinical Referral Information</td>
-      <td>GET</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/binary/getClinicalInfoPDFUsingGET">/v1/Binary/$ers.generateCRI</a></td>
     </tr>
     <tr>
       <td>A008</td>
-      <td><a href="explore_a008.html">Retrieve Worklist</a></td>
+      <td>Retrieve Worklist</td>
       <td>Clinical Referral Information</td>
-      <td>POST</td>
-      <td><a href="http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/referralrequest/getWorklistUsingPOST">/v1/ReferralRequest/$ers.fetchworklist</a></td>
     </tr>
   </tbody>
 </table>
@@ -464,7 +448,7 @@ $('#toc').on('click', 'a', function() {
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2018 NHS Digital<br />
-                     Site last generated: May 23, 2018 <br />
+                     Site last generated: May 24, 2018 <br />
                     c35f7f7e82393627fe776fdd2a7748e742c389d6<br/>
                     <br/>
                     <!-- OGL Licence -->

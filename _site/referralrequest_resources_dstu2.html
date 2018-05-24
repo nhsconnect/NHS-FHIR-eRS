@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Links to the Retrieve Clinical Information profiles">
-<meta name="keywords" content="restfhir,  rest, resource">
-<title>Retrieve Clincal Information | eRS</title>
+<meta name="description" content="Links to the Retrieve Referral Request profiles">
+<meta name="keywords" content=" rest, resource">
+<title>Retrieve Referral Request | eRS</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -131,7 +131,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Retrieve Clincal Information">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Retrieve Referral Request">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -207,7 +207,7 @@
                     
                     
                     
-                    <li><a href="fetch_worklist_resources_dstu2.html">DSTU2</a></li>
+                    <li><a href="fetch_worklist_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
@@ -228,13 +228,13 @@
                     
                     
                     
-                    <li><a href="referencedata_resources.html">Resources</a></li>
+                    <li><a href="referencedata_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="referencedata_examples.html">Example</a></li>
+                    <li><a href="referencedata_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -249,13 +249,13 @@
                     
                     
                     
-                    <li><a href="referralrequest_resources.html">Resources</a></li>
+                    <li class="active"><a href="referralrequest_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="referralrequest_examples.html">Example</a></li>
+                    <li><a href="referralrequest_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -270,13 +270,13 @@
                     
                     
                     
-                    <li class="active"><a href="retrieveci_resources.html">Resources</a></li>
+                    <li><a href="retrieveci_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
                     
                     
-                    <li><a href="retrieveci_examples.html">Example</a></li>
+                    <li><a href="retrieveci_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -333,7 +333,7 @@
              
 
 <div class="post-header">
-   <h1 class="post-title-main">Retrieve Clincal Information</h1>
+   <h1 class="post-title-main">Retrieve Referral Request</h1>
 </div>
 
 
@@ -341,7 +341,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Links to the Retrieve Clinical Information profiles</div>
+    <div class="summary">Links to the Retrieve Referral Request profiles</div>
    
 
    
@@ -371,33 +371,23 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <table>
-  <thead>
-    <tr>
-      <th>Operation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/OperationDefinition/eRS-ClinicalReferralInformation-Operation-1">eRS-ClinicalReferralInformation-Operation-1</a></td>
-    </tr>
-  </tbody>
-</table>
+  <h2 id="retrieve-referral-request">Retrieve Referral Request</h2>
+
+<p>Constrained FHIR model created to support the use of a Referral Request.
+The FHIR resources have been created using HL7 DSTU2.</p>
+
+<p>The profiles can be found at:</p>
+
+<ul>
+  <li><a href="https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralRequestResponse/Profile.ReferralRequestResponse.html">e-RS Referral Request Response</a></li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<p><a href="https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html">Examples section</a></p>
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_rest.html" class="btn btn-default navbar-btn cursorNorm" role="button">rest</a>
-        
-        
-        
-        <a href="tag_fhir.html" class="btn btn-default navbar-btn cursorNorm" role="button">fhir</a>
-        
-        
         
     </div>
 
@@ -413,7 +403,7 @@ $('#toc').on('click', 'a', function() {
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2018 NHS Digital<br />
-                     Site last generated: May 23, 2018 <br />
+                     Site last generated: May 24, 2018 <br />
                     c35f7f7e82393627fe776fdd2a7748e742c389d6<br/>
                     <br/>
                     <!-- OGL Licence -->

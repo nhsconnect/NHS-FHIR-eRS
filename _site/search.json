@@ -22,7 +22,7 @@
 		"keywords": "endpoint ,catalogue, API",
 		"url": "explore_endpoint_catalogue.html",
 		"summary": "",
-		"content": "<h2 id=\"endpoint-catalogue\">Endpoint Catalogue</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>Id</th>\n      <th>Name</th>\n      <th>Family</th>\n      <th>Verb</th>\n      <th>URI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A001</td>\n      <td><a href=\"explore_a001.html\">Create Professional Session</a></td>\n      <td>Session</td>\n      <td>POST</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/createProfessionalSessionUsingPOST\">/v1/ProfessionalSession</a></td>\n    </tr>\n    <tr>\n      <td>A002</td>\n      <td><a href=\"explore_a002.html\">Professional Session Select Role</a></td>\n      <td>Session</td>\n      <td>PUT</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/updateProfessionalSessionSelectRoleUsingPUT\">/v1/ProfessionalSession/{sessionKey}</a></td>\n    </tr>\n    <tr>\n      <td>A003</td>\n      <td><a href=\"explore_a003.html\">Delete Professional Session\t</a></td>\n      <td>Session</td>\n      <td>DELETE</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/professionalsession/deleteProfessionalSessionUsingDELETE\">/v1/ProfessionalSession/{sessionKey}</a></td>\n    </tr>\n    <tr>\n      <td>A004</td>\n      <td><a href=\"explore_a004.html\">Retrieve Reference Data</a></td>\n      <td>Reference Data</td>\n      <td>GET</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/valueset/getValueSetUsingGET\">/v1/ValueSet/{valueSetId}n</a></td>\n    </tr>\n    <tr>\n      <td>A005</td>\n      <td><a href=\"explore_a005.html\">Retrieve Referral Request</a></td>\n      <td>Clinical Referral Information</td>\n      <td>GET</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/referralrequest/getUsingGET\">/v1/ReferralRequest/{id}</a></td>\n    </tr>\n    <tr>\n      <td>A006</td>\n      <td><a href=\"explore_a006.html\">Retrieve Attachment</a></td>\n      <td>Clinical Referral Information</td>\n      <td>GET</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/binary/getAttachmentContentBodyUsingGET\">/v1/Binary/att-{referralRequestAttachmentId</a></td>\n    </tr>\n    <tr>\n      <td>A007</td>\n      <td><a href=\"explore_a007.html\">Retrieve Clinical Information</a></td>\n      <td>Clinical Referral Information</td>\n      <td>GET</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/binary/getClinicalInfoPDFUsingGET\">/v1/Binary/$ers.generateCRI</a></td>\n    </tr>\n    <tr>\n      <td>A008</td>\n      <td><a href=\"explore_a008.html\">Retrieve Worklist</a></td>\n      <td>Clinical Referral Information</td>\n      <td>POST</td>\n      <td><a href=\"http://api-ers.spine2.ncrs.nhs.uk:88/swagger-ui/#!/referralrequest/getWorklistUsingPOST\">/v1/ReferralRequest/$ers.fetchworklist</a></td>\n    </tr>\n  </tbody>\n</table>\n"
+		"content": "<h2 id=\"endpoint-catalogue\">Endpoint Catalogue</h2>\n\n<p>For further API endpoint information click <a href=\"https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_catalogue.html\">here</a></p>\n\n<table>\n  <thead>\n    <tr>\n      <th>Id</th>\n      <th>Name</th>\n      <th>Family</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A001</td>\n      <td>Create Professional Session</td>\n      <td>Session</td>\n    </tr>\n    <tr>\n      <td>A002</td>\n      <td>Professional Session Select Role</td>\n      <td>Session</td>\n    </tr>\n    <tr>\n      <td>A003</td>\n      <td>Delete Professional Session</td>\n      <td>Session</td>\n    </tr>\n    <tr>\n      <td>A004</td>\n      <td>Retrieve Reference Data</td>\n      <td>Reference Data</td>\n    </tr>\n    <tr>\n      <td>A005</td>\n      <td>Retrieve Referral Request</td>\n      <td>Clinical Referral Information</td>\n    </tr>\n    <tr>\n      <td>A006</td>\n      <td>Retrieve Attachment</td>\n      <td>Clinical Referral Information</td>\n    </tr>\n    <tr>\n      <td>A007</td>\n      <td>Retrieve Clinical Information</td>\n      <td>Clinical Referral Information</td>\n    </tr>\n    <tr>\n      <td>A008</td>\n      <td>Retrieve Worklist</td>\n      <td>Clinical Referral Information</td>\n    </tr>\n  </tbody>\n</table>\n"
 		
 	}
 	,
@@ -39,7 +39,7 @@
 		"keywords": "rest, resource",
 		"url": "fetch_worklist_resources_dstu2.html",
 		"summary": "Examples of the Fetch Worklist endpoint",
-		"content": "<h2 id=\"fetch-worklist\">Fetch Worklist</h2>\n\n<p>Constrained FHIR model created to support the use of a List resource with Referrals for Review entries.\nThe FHIR resources have been created using HL7 DSTU2.</p>\n\n<p>The profiles can be found at:</p>\n\n<ul>\n  <li>\n    <p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistQuery/Profile.ReferralsForReviewWorklistQuery.html\">e-RS Referrals for Review Worklist Query</a></p>\n  </li>\n  <li>\n    <p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/Profile.ReferralsForReviewWorklistResponse.html\">e-RS Referrals for Review Worklist Response</a></p>\n  </li>\n</ul>\n\n<h2 id=\"fetch-worklist-example\">Fetch Worklist Example</h2>\n\n<p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html\">Examples section</a></p>\n"
+		"content": "<h3 id=\"fetch-worklist\">Fetch Worklist</h3>\n\n<p>Constrained FHIR model created to support the use of a List resource with Referrals for Review entries.\nThe FHIR resources have been created using HL7 DSTU2.</p>\n\n<p>The profiles can be found at:</p>\n\n<ul>\n  <li>\n    <p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistQuery/Profile.ReferralsForReviewWorklistQuery.html\">e-RS Referrals for Review Worklist Query</a></p>\n  </li>\n  <li>\n    <p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/Profile.ReferralsForReviewWorklistResponse.html\">e-RS Referrals for Review Worklist Response</a></p>\n  </li>\n</ul>\n\n<h3 id=\"fetch-worklist-example\">Fetch Worklist Example</h3>\n\n<p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html\">Examples section</a></p>\n"
 		
 	}
 	,
@@ -47,7 +47,7 @@
 	{
 		
 		"title": "Fetch Worklist Resources",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "rest, resource",
 		"url": "fetch_worklist_resources_stu3.html",
 		"summary": "Links to the Fetch Worklist endpoint profiles",
@@ -59,7 +59,7 @@
 	{
 		
 		"title": "Explore Overview",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "getcarerecord, structured, rest, resource",
 		"url": "explore.html",
 		"summary": "Overview of the Explore section",
@@ -130,36 +130,24 @@
 
 	{
 		
+		"title": "Reference Data",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "referencedata_resources_dstu2.html",
+		"summary": "Links to the Reference data profiles",
+		"content": "<h2 id=\"retrieve-reference-data\">Retrieve Reference Data</h2>\n\n<p>Constrained FHIR model created to support the use of a valueset.\nThe FHIR resources have been created using HL7 DSTU2.</p>\n\n<p>The profiles can be found at:</p>\n\n<ul>\n  <li><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/Profile.Valueset.html\">e-RS Specialty ValueSet</a></li>\n</ul>\n\n<h2 id=\"example\">Example</h2>\n\n<p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html\">Examples section</a></p>\n"
+		
+	}
+	,
+
+	{
+		
 		"title": "Reference data example",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "rest, resource",
-		"url": "referencedata_examples.html",
-		"summary": "Example of the Specialty reference data",
-		"content": "\n"
-		
-	}
-	,
-
-	{
-		
-		"title": "Reference data Resource",
-		"tags": "restfhir",
-		"keywords": "rest, resource",
-		"url": "referencedata_resources.html",
-		"summary": "Links to the Reference data  profiles",
-		"content": "<table>\n  <thead>\n    <tr>\n      <th>Profile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1\">eRS-Specialty-CodeSystem-1</a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td>ValueSet</td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1\">eRS-Specialty-1</a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td>CodeSystem</td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1\">eRS-Specialty-1</a></td>\n    </tr>\n  </tbody>\n</table>\n"
-		
-	}
-	,
-
-	{
-		
-		"title": "Retrieve Referral request data example",
-		"tags": "restfhir",
-		"keywords": "rest, resource",
-		"url": "referralrequest_examples.html",
-		"summary": "Example of the Referral Request profile",
-		"content": "\n"
+		"url": "referencedata_resources_stu3.html",
+		"summary": "Links to the Fetch reference data endpoint profiles",
+		"content": "<div class=\"alert alert-danger\" role=\"alert\"><i class=\"fa fa-exclamation-circle\"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and is currently in a draft state. Is it advised not to develop \nusing this version until further notice.</div>\n\n<table>\n  <thead>\n    <tr>\n      <th>Profile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1\">eRS-Specialty-CodeSystem-1</a></td>\n    </tr>\n  </tbody>\n</table>\n"
 		
 	}
 	,
@@ -167,11 +155,23 @@
 	{
 		
 		"title": "Retrieve Referral Request",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "rest, resource",
-		"url": "referralrequest_resources.html",
+		"url": "referralrequest_resources_dstu2.html",
 		"summary": "Links to the Retrieve Referral Request profiles",
-		"content": "<table>\n  <thead>\n    <tr>\n      <th>Profile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchResponse-Bundle-1\">eRS-ReferralRequest-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-Patient-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-DocumentReference-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-Appointment-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-Practitioner-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-HealthcareService-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-Location-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1\">eRS-OperationOutcome-1</a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <thead>\n    <tr>\n      <th>Extensions</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1\">Extension-eRS-Appointment-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1\">Extension-eRS-ClinicalInfoFirstSubmitted-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1\">Extension-eRS-ClinicalInfoLastUpdated-1</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1\">Extension-eRS-AttachedBy-1</a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <thead>\n    <tr>\n      <th>ValueSets</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1\">eRS API Error Code</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentStatus-1\">eRS Appointment Status</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1\">eRS Attachment Type</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1\">eRS Priority</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1\">eRS Referral Type</a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <thead>\n    <tr>\n      <th>CodeSystems</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1\">eRS API Error Code</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1\">eRS Appointment Status</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1\">eRS Attachment Type</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1\">eRS Priority</a></td>\n    </tr>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1\">eRS Referral Type</a></td>\n    </tr>\n  </tbody>\n</table>\n\n"
+		"content": "<h2 id=\"retrieve-referral-request\">Retrieve Referral Request</h2>\n\n<p>Constrained FHIR model created to support the use of a Referral Request.\nThe FHIR resources have been created using HL7 DSTU2.</p>\n\n<p>The profiles can be found at:</p>\n\n<ul>\n  <li><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralRequestResponse/Profile.ReferralRequestResponse.html\">e-RS Referral Request Response</a></li>\n</ul>\n\n<h2 id=\"example\">Example</h2>\n\n<p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html\">Examples section</a></p>\n"
+		
+	}
+	,
+
+	{
+		
+		"title": "Retrieve Referral request data example",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "referralrequest_resources_stu3.html",
+		"summary": "Example of the Referral Request profile",
+		"content": "\n"
 		
 	}
 	,
@@ -250,22 +250,10 @@
 
 	{
 		
-		"title": "Retrieve Attachment example",
-		"tags": "restfhir",
-		"keywords": "rest, resource",
-		"url": "retrieveattachment_examples.html",
-		"summary": "Example of the Retrieve Attachmet profile",
-		"content": "\n"
-		
-	}
-	,
-
-	{
-		
 		"title": "Retrieve Attachment",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "rest, resource",
-		"url": "retrieveattachment_resources.html",
+		"url": "retrieveattachment_resources_dstu2.html",
 		"summary": "Links to the Retrieve Attachment profiles",
 		"content": "<table>\n  <thead>\n    <tr>\n      <th>Profile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"\"></a></td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td>ValueSet</td>\n    </tr>\n  </tbody>\n</table>\n\n<table>\n  <tbody>\n    <tr>\n      <td>CodeSystem</td>\n    </tr>\n  </tbody>\n</table>\n"
 		
@@ -274,12 +262,12 @@
 
 	{
 		
-		"title": "Retrieve Clinical Information example",
-		"tags": "restfhir",
+		"title": "Retrieve Attachment example",
+		"tags": "",
 		"keywords": "rest, resource",
-		"url": "retrieveci_examples.html",
-		"summary": "Example of the Retrieve Clinical Information profile",
-		"content": "<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>\n</code></pre>\n</div>\n"
+		"url": "retrieveattachment_resources_stu3.html",
+		"summary": "Example of the Retrieve Attachmet profile",
+		"content": "\n"
 		
 	}
 	,
@@ -287,11 +275,23 @@
 	{
 		
 		"title": "Retrieve Clincal Information",
-		"tags": "restfhir",
+		"tags": "",
 		"keywords": "rest, resource",
-		"url": "retrieveci_resources.html",
+		"url": "retrieveci_resources_dstu2.html",
 		"summary": "Links to the Retrieve Clinical Information profiles",
-		"content": "<table>\n  <thead>\n    <tr>\n      <th>Operation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/OperationDefinition/eRS-ClinicalReferralInformation-Operation-1\">eRS-ClinicalReferralInformation-Operation-1</a></td>\n    </tr>\n  </tbody>\n</table>\n"
+		"content": "<h2 id=\"retrieve-clinical-information\">Retrieve Clinical Information</h2>\n\n<p>Constrained FHIR model created to support the use of a  query to retrieve the PDF Clinical Referral Information \nfor a Referral Request.\nThe FHIR resources have been created using HL7 DSTU2.</p>\n\n<p>The profiles can be found at:</p>\n\n<ul>\n  <li><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ClinicalReferralInformationQuery/Profile.ClinicalReferralInformationQuery.html\">e-RS Clinical Referral Information Query</a></li>\n</ul>\n\n<p>##Example ##</p>\n\n<p><a href=\"https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html\">Examples section</a></p>\n"
+		
+	}
+	,
+
+	{
+		
+		"title": "Retrieve Clinical Information",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "retrieveci_resources_stu3.html",
+		"summary": "Links to the Fetch Clinical Information endpoint profiles",
+		"content": "<div class=\"alert alert-danger\" role=\"alert\"><i class=\"fa fa-exclamation-circle\"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and is currently in a draft state. Is it advised not to develop \nusing this version until further notice.</div>\n\n<table>\n  <thead>\n    <tr>\n      <th>Operation Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><a href=\"https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1\">eRS-FetchWorklist-Operation-1</a></td>\n    </tr>\n  </tbody>\n</table>\n"
 		
 	}
 	,

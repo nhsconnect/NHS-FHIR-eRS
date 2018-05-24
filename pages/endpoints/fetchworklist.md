@@ -1,7 +1,6 @@
 ---
 title: Explore Overview
 keywords: getcarerecord, structured, rest, resource
-tags: [rest,fhir]
 sidebar: foundations_sidebar
 permalink: explore.html
 summary: "Overview of the Explore section"
