@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,7 +105,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> FHIR&reg; eRS Referral API</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> FHIR® eRS Referral API</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -147,7 +148,7 @@
 
 <!-- Page Content -->
 <div class="container">
-    <div class="col-lg-12">&nbsp;</div>
+    <div class="col-lg-12"> </div>
     <!-- Content Row -->
     <div class="row">
         
@@ -167,11 +168,11 @@
 
  
     <p style="font-size:16px;">
-    <img src="images/logo.png" alt="NHS Digital Logo"/>
+    <img src="images/logo.png" alt="NHS Digital Logo">
     </p>
 
 
-    <li class="sidebarTitle">eRS FHIR&reg; API 1.0.0 draft</li>
+    <li class="sidebarTitle">eRS FHIR® API 1.0.0 draft</li>
     
     
     
@@ -292,7 +293,7 @@
         
     
     <li>
-        <a href="#">Help & Support</a>
+        <a href="#">Help &amp; Support</a>
         <ul>
             
             
@@ -371,8 +372,11 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and is currently in a draft state. Is it advised not to develop 
+  <div class="alert alert-danger" role="alert">
+<i class="fa fa-exclamation-circle"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and is currently in a draft state. Is it advised not to develop 
 using this version until further notice.</div>
+
+<h2 id="profiles">Profiles</h2>
 
 <table>
   <thead>
@@ -390,7 +394,7 @@ using this version until further notice.</div>
 <table>
   <thead>
     <tr>
-      <th>Profile</th>
+      <th>StructureDefinition</th>
     </tr>
   </thead>
   <tbody>
@@ -401,25 +405,25 @@ using this version until further notice.</div>
       <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchResponse-Bundle-1">eRS-ReferralRequest-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-Patient-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1">eRS-Patient-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-DocumentReference-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1">eRS-DocumentReference-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-Appointment-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1">eRS-Appointment-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-Practitioner-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1">eRS-Practitioner-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-HealthcareService-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1">eRS-ReferralsForReview-HealthcareService-1</a></td>
     </tr>
     <tr>
       <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-Location-1</a></td>
     </tr>
     <tr>
-      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1">eRS-OperationOutcome-1</a></td>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1">eRS-OperationOutcome-1</a></td>
     </tr>
   </tbody>
 </table>
@@ -505,6 +509,772 @@ using this version until further notice.</div>
   </tbody>
 </table>
 
+<h2 id="examples">Examples</h2>
+
+<h3 id="fetchworklist-operation">FetchWorklist Operation</h3>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationDefinition"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eRS-FetchWorklist-Operation-1"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"lastUpdated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-03-05T00:00:00+01:00"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eRS-FetchWorklist-Operation-1"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"kind"</span><span class="p">:</span><span class="w"> </span><span class="s2">"operation"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-05-25T00:00:00+01:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"publisher"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NHS Digital"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"contact"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Interoperability Team"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"telecom"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"email"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"interoperabilityteam@nhs.net"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"work"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Request to retrieve a worklist for a referral request."</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ers.fetchworklist"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"instance"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"listType"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indicates the type of list requested, this is currently fixed to 'REFERRALS_FOR_REVIEW'."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CodeableConcept"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"binding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"valueSetUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralListSelector-1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"service"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The service identifier"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Identifier"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"specialtyAssignedIndicator"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indicates whether a Specialty is assigned to the Referral Request. If 'Assigned' the 'Specialty' parameter must be present. If 'Not Assigned' the 'specialtyAssignedIndicator' and 'Specialty' parameter must be absent."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CodeableConcept"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"binding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"valueSetUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"specialty"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Specialty for the service. If present, the 'specialtyAssignedIndicator' parameter must be set to 'Assigned'."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CodeableConcept"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"binding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"valueSetUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"location"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The service location identifier."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Identifier"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinicianAssignedIndicator"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indicates whether a clinician is assigned to the Referral Request. If 'Assigned' the 'Clinician' parameter must be present. If 'Not Assigned' the 'Clinician' parameter must be absent."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CodeableConcept"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"binding"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"strength"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"valueSetUri"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinician"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"in"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The clinician assigned to the Referral Request. If present, the 'ClinicianAssignedIndicator' parameter must be set to 'Assigned'"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Identifier"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"response"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"out"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"min"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"max"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"documentation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The List resource that has been returned in response to the given input parameters"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"List"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Fetchworklist-List-1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="fetchworklist">FetchWorklist</h3>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"List"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"fhir_comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"This example message is provided for illustrative purposes only. It has had no clinical validation. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"contained"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1000000001"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/nhs-number"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1000000001"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"snapshot"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"entry"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralsforReview-WorkListItem-1"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#1000000001"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"priority"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROUTINE"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"appointmentStart"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-05T08:00:00.000Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinicalInfoFirstSubmitted"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-03T13:30:48.861Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinicalInfoPrinted"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueBoolean"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"requestContextStatus"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NEVER_REVIEWED"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Never Reviewed"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"specialty"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2WW"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2WW"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eReferralPathwayStart"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-03T13:30:36.139Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"referralType"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TRIAGE_DEFERRAL"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Triage Deferral"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReferralRequest/000000070001"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralsforReview-WorkListItem-1"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#1000000001"</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"priority"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TWO_WEEK_WAIT"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2 Week Wait"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"appointmentStart"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-05T08:00:00.000Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinicalInfoFirstSubmitted"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-03T13:17:19.613Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinicalInfoPrinted"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueBoolean"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"requestContextStatus"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NEVER_REVIEWED"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Never Reviewed"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"specialty"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2WW"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2WW"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eReferralPathwayStart"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-10-03T13:16:57.813Z"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"referralType"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://fhir.nhs.net/ValueSet/eRS-ReferralType-1"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APPOINTMENT"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Appointment"</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+                </span><span class="p">]</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"item"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReferralRequest/000000070000"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="patient-example">Patient Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9900002831"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/nhs-number"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9900002831"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="referral-request-example">Referral Request Example</h3>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReferralRequest"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"000234620011"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"fhir_comments"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"This example message is provided for illustrative purposes only. It has had no clinical validation. Where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"versionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"contained"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HealthcareService"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"300511"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/eRS-service"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"300511"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#RKE123"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LGI Orthopaedics Service"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Location"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RKE123"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://directory.spineservices.nhs.uk/STU3"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RKE123"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456789012"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/sds-user-id"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456789012"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9900002831"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/nhs-number"</span><span class="p">,</span><span class="w">
+          </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9900002831"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"attachment1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REFERRER"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referrer"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-09-05T13:24:53Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Clinical comment as entered by clinician"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5345434"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#123456789012"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nt">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text/plain"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Binary/att-100763-5345434"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">23000</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinical-comment.txt"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"creation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-04"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"attachment2"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REFERRER"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referrer"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-09-05T09:24:53Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"X-ray of relevant body part"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"876220"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                  </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#123456789012"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nt">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/png"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Binary/att-100763-876220"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"animage.png"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"creation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-04"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#appointment"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-01T09:00:00Z"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-31T11:20:00Z"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TWO_WEEK_WAIT"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2 Week Wait"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"intent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"proposal"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#9900002831"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"specialty"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DERMATOLOGY"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dermatology"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"supportingInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#attachment1"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#attachment2"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReferralRequest/000231602100"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ReferralRequest/000231601933"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="location-example">Location Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Location"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RKE123"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://directory.spineservices.nhs.uk/STU3"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RKE123"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h3 id="operationoutcome-example">OperationOutcome Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"f3819168-4847-44ea-8728-1f50a520e294"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MISSING_VALUE"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A mandatory input field is missing"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"diagnostics"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A mandatory input field is missing."</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"ReferralRequest.identifier"</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="documentreference-example">DocumentReference Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REFERRER"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referrer"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-09-05T14:24:53+01:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Clinical comment as entered by clinician"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5345434"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#123456789012"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nt">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text/plain"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Binary/att-100763-5345434"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">23000</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clinical-comment.txt"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"creation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-04"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="appointment-example">Appointment Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Appointment"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"appointment"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"booked"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-10-10T10:00:00+01:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-10-10T10:00:00+01:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"participant"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#300511"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accepted"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/ValueSet/encounter-participant-type"</span><span class="p">,</span><span class="w">
+              </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CON"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nt">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#123456789012"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accepted"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="healthcareservice-example">HealthcareService Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HealthcareService"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"300511"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/ers-service"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"300511"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nt">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#RKE123"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"serviceName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LGI Orthopaedics Service"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
+
+<h3 id="practitioner-example">Practitioner Example</h3>
+<div class="highlighter-rouge">
+<pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456789012"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/Id/sds-user-id"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123456789012"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
 
 
     <div class="tags">
@@ -515,20 +1285,20 @@ using this version until further notice.</div>
 
 </div>
 
-<hr class="shaded"/>
+<hr class="shaded">
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
-                    <br/>
-                    &copy;2018 NHS Digital<br />
-                     Site last generated: May 24, 2018 <br />
-                    c35f7f7e82393627fe776fdd2a7748e742c389d6<br/>
-                    <br/>
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
+                    <br>
+                    ©2018 NHS Digital<br>
+                     Site last generated: May 29, 2018 <br>
+                    c35f7f7e82393627fe776fdd2a7748e742c389d6<br>
+                    <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">
-                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></img></a>
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></a>
                         <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
                     </div>
                 </div>

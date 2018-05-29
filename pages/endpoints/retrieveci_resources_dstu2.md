@@ -17,6 +17,6 @@ The profiles can be found at:
 - [e-RS Clinical Referral Information Query](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ClinicalReferralInformationQuery/Profile.ClinicalReferralInformationQuery.html)
 
 
-##Example ##
+## Example ##
 
 [Examples section](https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html)
