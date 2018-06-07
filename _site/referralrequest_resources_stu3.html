@@ -297,7 +297,7 @@
             
             
             
-            <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="support_faq.html">Frequently Asked Questions (FAQ)</a></li>
             
             
             
@@ -590,6 +590,42 @@ using this version until further notice.</div>
       </span><span class="p">]</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Appointment"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"appointment"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"booked"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-10-10T09:00:00Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-10-11T09:00:00Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"participant"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#300511"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accepted"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+              </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                  </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/ValueSet/encounter-participant-type"</span><span class="p">,</span><span class="w">
+                  </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CON"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+              </span><span class="p">]</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="nt">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#123456789012"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"accepted"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
       </span><span class="nt">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9900002831"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -616,7 +652,7 @@ using this version until further notice.</div>
       </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REFERRER"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referrer"</span><span class="w">
           </span><span class="p">}</span><span class="w">
@@ -657,7 +693,7 @@ using this version until further notice.</div>
       </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"REFERRER"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Referrer"</span><span class="w">
           </span><span class="p">}</span><span class="w">
@@ -689,7 +725,7 @@ using this version until further notice.</div>
   </span><span class="p">],</span><span class="w">
   </span><span class="nt">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#appointment"</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -707,7 +743,7 @@ using this version until further notice.</div>
       </span><span class="nt">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w">
-            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TWO_WEEK_WAIT"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2 Week Wait"</span><span class="w">
           </span><span class="p">}</span><span class="w">
@@ -723,6 +759,7 @@ using this version until further notice.</div>
   </span><span class="nt">"specialty"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nt">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DERMATOLOGY"</span><span class="p">,</span><span class="w">
         </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dermatology"</span><span class="w">
       </span><span class="p">}</span><span class="w">
@@ -948,8 +985,8 @@ using this version until further notice.</div>
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
                     <br/>
                     &copy;2018 NHS Digital<br />
-                     Site last generated: May 29, 2018 <br />
-                    c35f7f7e82393627fe776fdd2a7748e742c389d6<br/>
+                     Site last generated: Jun 7, 2018 <br />
+                    d16fe8850c34eee1b41f146b82c82de1abdad1b4<br/>
                     <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

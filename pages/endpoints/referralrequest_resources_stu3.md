@@ -142,6 +142,42 @@ using this version until further notice." %}
       ]
     },
     {
+      "resourceType": "Appointment",
+      "id": "appointment",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"
+        ]
+      },
+      "status": "booked",
+      "start": "2016-10-10T09:00:00Z",
+      "end": "2016-10-11T09:00:00Z",
+      "participant": [
+        {
+          "actor": {
+            "reference": "#300511"
+          },
+          "status": "accepted"
+        },
+        {
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+                  "code": "CON"
+                }
+              ]
+            }
+          ],
+          "actor": {
+            "reference": "#123456789012"
+          },
+          "status": "accepted"
+        }
+      ]
+    },
+    {
       "resourceType": "Patient",
       "id": "9900002831",
       "meta": {
@@ -168,7 +204,7 @@ using this version until further notice." %}
       "type": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
             "code": "REFERRER",
             "display": "Referrer"
           }
@@ -209,7 +245,7 @@ using this version until further notice." %}
       "type": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
             "code": "REFERRER",
             "display": "Referrer"
           }
@@ -241,7 +277,7 @@ using this version until further notice." %}
   ],
   "extension": [
     {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1",
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1",
       "valueReference": {
         "reference": "#appointment"
       }
@@ -259,7 +295,7 @@ using this version until further notice." %}
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
             "code": "TWO_WEEK_WAIT",
             "display": "2 Week Wait"
           }
@@ -275,6 +311,7 @@ using this version until further notice." %}
   "specialty": {
     "coding": [
       {
+        "system": "https://",
         "code": "DERMATOLOGY",
         "display": "Dermatology"
       }

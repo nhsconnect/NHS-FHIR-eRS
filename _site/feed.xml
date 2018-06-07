@@ -5,8 +5,8 @@
         <description>The Care Connect RESTful APIs support the delivery of care by opening information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.</description>
         <link>http://localhost:4005/</link>
         <atom:link href="http://localhost:4005/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 29 May 2018 11:29:36 +0100</pubDate>
-        <lastBuildDate>Tue, 29 May 2018 11:29:36 +0100</lastBuildDate>
+        <pubDate>Thu, 07 Jun 2018 09:26:59 +0100</pubDate>
+        <lastBuildDate>Thu, 07 Jun 2018 09:26:59 +0100</lastBuildDate>
         <generator>Jekyll v3.4.3</generator>
         
     </channel>

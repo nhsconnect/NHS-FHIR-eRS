@@ -182,7 +182,6 @@ using this version until further notice." %}
 ### FetchWorklist ###
 
 ```
-
 {
   "resourceType": "List",
   "fhir_comments": [
@@ -229,7 +228,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
                     "code": "ROUTINE"
                   }
                 ]
@@ -252,7 +251,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1",
                     "code": "NEVER_REVIEWED",
                     "display": "Never Reviewed"
                   }
@@ -264,7 +263,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
                     "code": "2WW",
                     "display": "2WW"
                   }
@@ -280,7 +279,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1",
                     "code": "TRIAGE_DEFERRAL",
                     "display": "Triage Deferral"
                   }
@@ -310,7 +309,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
                     "code": "TWO_WEEK_WAIT",
                     "display": "2 Week Wait"
                   }
@@ -334,7 +333,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1",
                     "code": "NEVER_REVIEWED",
                     "display": "Never Reviewed"
                   }
@@ -346,7 +345,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
                     "code": "2WW",
                     "display": "2WW"
                   }
@@ -362,7 +361,7 @@ using this version until further notice." %}
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "http://fhir.nhs.net/ValueSet/eRS-ReferralType-1",
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1",
                     "code": "APPOINTMENT",
                     "display": "Appointment"
                   }
@@ -471,6 +470,42 @@ using this version until further notice." %}
       ]
     },
     {
+      "resourceType": "Appointment",
+      "id": "appointment",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"
+        ]
+      },
+      "status": "booked",
+      "start": "2016-10-10T09:00:00Z",
+      "end": "2016-10-11T09:00:00Z",
+      "participant": [
+        {
+          "actor": {
+            "reference": "#300511"
+          },
+          "status": "accepted"
+        },
+        {
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+                  "code": "CON"
+                }
+              ]
+            }
+          ],
+          "actor": {
+            "reference": "#123456789012"
+          },
+          "status": "accepted"
+        }
+      ]
+    },
+    {
       "resourceType": "Patient",
       "id": "9900002831",
       "meta": {
@@ -497,7 +532,7 @@ using this version until further notice." %}
       "type": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
             "code": "REFERRER",
             "display": "Referrer"
           }
@@ -538,7 +573,7 @@ using this version until further notice." %}
       "type": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
             "code": "REFERRER",
             "display": "Referrer"
           }
@@ -570,7 +605,7 @@ using this version until further notice." %}
   ],
   "extension": [
     {
-      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1",
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1",
       "valueReference": {
         "reference": "#appointment"
       }
@@ -588,7 +623,7 @@ using this version until further notice." %}
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
             "code": "TWO_WEEK_WAIT",
             "display": "2 Week Wait"
           }
@@ -604,6 +639,7 @@ using this version until further notice." %}
   "specialty": {
     "coding": [
       {
+        "system": "https://",
         "code": "DERMATOLOGY",
         "display": "Dermatology"
       }
@@ -663,7 +699,7 @@ using this version until further notice." %}
       "details": {
         "coding": [
           {
-            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1",
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1",
             "code": "MISSING_VALUE",
             "display": "A mandatory input field is missing"
           }
@@ -689,17 +725,17 @@ using this version until further notice." %}
       "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
     ]
   },
+  "status": "current",
   "type": {
     "coding": [
       {
-        "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1",
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
         "code": "REFERRER",
         "display": "Referrer"
       }
     ]
   },
   "indexed": "2016-09-05T14:24:53+01:00",
-  "status": "current",
   "description": "Clinical comment as entered by clinician",
   "content": [
     {
@@ -750,7 +786,7 @@ using this version until further notice." %}
         {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+              "system": "http://hl7.org/fhir/CodeSystem/encounter-participant-type",
               "code": "CON"
             }
           ]
@@ -783,10 +819,12 @@ using this version until further notice." %}
       "value": "300511"
     }
   ],
-  "location": {
-    "reference": "#RKE123"
-  },
-  "serviceName": "LGI Orthopaedics Service"
+  "location": [
+    {
+      "reference": "#RKE123"
+    }
+  ],
+  "name": "LGI Orthopaedics Service"
 }
 
 ```
