@@ -1,9 +1,9 @@
 ---
-title: Retrieve Attachment example
+title: Retrieve Attachment
 keywords:  rest, resource
 sidebar: foundations_sidebar
 permalink: retrieveattachment_resources_stu3.html
-summary: "Example of the Retrieve Attachmet profile"
+summary: "Retrieve Attachment profile"
 ---
 
 

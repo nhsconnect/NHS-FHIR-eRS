@@ -8,7 +8,7 @@ permalink: explore_endpoint_catalogue.html
 
 ##  Endpoint Catalogue ##
 
-For further API endpoint information click [here](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_catalogue.html)
+For further API endpoint information see the [Endpoint Catalogue](https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_catalogue.html) on the Health Developer Network.
 
 |Id   | Name| Family | 
 |----------|-----------|-----|

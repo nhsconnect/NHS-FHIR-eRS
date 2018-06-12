@@ -1,22 +1,24 @@
 ---
-title: Retrieve Referral request data example
+title: Retrieve Referral Request Data
 keywords:  rest, resource
 sidebar: foundations_sidebar
 permalink: referralrequest_resources_stu3.html
 summary: "Example of the Referral Request profile"
 ---
 
-{% include warning.html content="The profiles below have been created using FHIR STU3 and is currently in a draft state. Is it advised not to develop 
+{% include warning.html content="The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop 
 using this version until further notice." %}
 
-|Operation|
+## Profiles ##
+
+|OperationDefinition|
 |-------|
 |[eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1)|
 
 
 |StructureDefinition| 
 |-------|
-| [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchResponse-Bundle-1) | 
+| [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1) | 
 | [eRS-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1) | 
 | [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1) | 
 | [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1) | 
@@ -24,6 +26,7 @@ using this version until further notice." %}
 | [eRS-ReferralsForReview-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1) | 
 | [eRS-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1) | 
 | [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) | 
+| [eRS-Specialty-ValueSet-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1) |
 
 |Extensions|
 |-------|
