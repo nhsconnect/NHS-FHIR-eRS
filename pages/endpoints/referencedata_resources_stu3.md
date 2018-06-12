@@ -14,3 +14,9 @@ using this version until further notice." %}
 |StructureDefinition| 
 |-------|
 |[eRS-Specialty-CodeSystem-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1) | 
+
+
+|Extensions|
+|---------|
+|[Extension-eRS-EffectivetoDate-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-EffectivetoDate-1) |
+|[Extension-eRS-EffectivefromDate-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-EffectivefromDate-1) |
