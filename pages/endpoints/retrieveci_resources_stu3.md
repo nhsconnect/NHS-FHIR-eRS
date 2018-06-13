@@ -15,3 +15,10 @@ using this version until further notice." %}
 |-------|
 |[eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1) | 
 
+|ValueSets|
+|-------------|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1)|
+
+|CodeSystems|
+|-------------|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AssignedIndicator-1)|

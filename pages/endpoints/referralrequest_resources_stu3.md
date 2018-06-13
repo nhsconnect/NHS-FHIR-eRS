@@ -23,7 +23,7 @@ using this version until further notice." %}
 | [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1) | 
 | [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1) | 
 | [eRS-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1) | 
-| [eRS-ReferralsForReview-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1) | 
+| [eRS-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-HealthcareService-1) | 
 | [eRS-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1) | 
 | [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) | 
 | [eRS-Specialty-ValueSet-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1) |
@@ -98,12 +98,12 @@ using this version until further notice." %}
       "id": "300511",
       "meta": {
         "profile": [
-          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1"
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-HealthcareService-1"
         ]
       },
       "identifier": [
         {
-          "system": "https://fhir.nhs.uk/Id/eRS-service",
+          "system": "http://fhir.nhs.net/Id/ers-service",
           "value": "300511"
         }
       ],
@@ -485,12 +485,12 @@ using this version until further notice." %}
   "id": "300511",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralsForReview-HealthcareService-1"
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-HealthcareService-1"
     ]
   },
   "identifier": [
     {
-      "system": "https://fhir.nhs.uk/Id/ers-service",
+      "system": "http://fhir.nhs.net/Id/ers-service",
       "value": "300511"
     }
   ],
