@@ -11,11 +11,6 @@ using this version until further notice." %}
 
 ## Profiles ##
 
-|OperationDefinition|
-|-------|
-|[eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1)|
-
-
 |StructureDefinition| 
 |-------|
 | [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1) | 

@@ -13,7 +13,7 @@ using this version until further notice." %}
 
 |OperationDefinition| 
 |-------|
-|[eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1) | 
+|[eRS-ClinicalReferralInformation-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-ClinicalReferralInformation-Operation-1) | 
 
 |ValueSets|
 |-------------|
