@@ -41,19 +41,23 @@ using this version until further notice." %}
 |-------|
 |[eRS API Error Code](https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1)|
 |[eRS Appointment Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentStatus-1)|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1)|
 |[eRS Attachment Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1)|
 |[eRS Priority](https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1)|
 |[eRS Referral Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1)|
 |[eRS Request Context Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1)|
+|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralListSelector-1)|
 
 |CodeSystems|
 |-------|
 |[eRS API Error Code](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1)|
 |[eRS Appointment Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1)|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AssignedIndicator-1)|
 |[eRS Attachment Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1)|
 |[eRS Priority](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1)|
 |[eRS Referral Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1)|
 |[eRS Request Context Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1)|
+|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralListSelector-1)|
 
 ## Examples ##
 
