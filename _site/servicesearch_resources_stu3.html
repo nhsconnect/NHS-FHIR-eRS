@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Links to the Retrieve Clinical Information profiles">
+<meta name="description" content="Links to the Service Search endpoint profiles">
 <meta name="keywords" content=" rest, resource">
-<title>Retrieve Clincal Information | eRS</title>
+<title>Service Search | eRS</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -131,7 +131,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Retrieve Clincal Information">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Service Search">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -270,7 +270,7 @@
                     
                     
                     
-                    <li class="active"><a href="retrieveci_resources_dstu2.html">DSTU2 (Live)</a></li>
+                    <li><a href="retrieveci_resources_dstu2.html">DSTU2 (Live)</a></li>
                     
                     
                     
@@ -291,7 +291,7 @@
                     
                     
                     
-                    <li><a href="servicesearch_resources_stu3.html">STU3 (Draft)</a></li>
+                    <li class="active"><a href="servicesearch_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -348,7 +348,7 @@
              
 
 <div class="post-header">
-   <h1 class="post-title-main">Retrieve Clincal Information</h1>
+   <h1 class="post-title-main">Service Search</h1>
 </div>
 
 
@@ -356,7 +356,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Links to the Retrieve Clinical Information profiles</div>
+    <div class="summary">Links to the Service Search endpoint profiles</div>
    
 
    
@@ -386,21 +386,150 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="retrieve-clinical-information">Retrieve Clinical Information</h2>
+  <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop 
+using this version until further notice.</div>
 
-<p>Constrained FHIR model created to support the use of a  query to retrieve the PDF Clinical Referral Information 
-for a Referral Request.
-The FHIR resources have been created using HL7 DSTU2.</p>
+<h2 id="profiles">Profiles</h2>
 
-<p>The profiles can be found at:</p>
+<table>
+  <thead>
+    <tr>
+      <th>OperationDefinition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1">eRS-PatientServiceSearch-Operation-1</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li><a href="https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ClinicalReferralInformationQuery/Profile.ClinicalReferralInformationQuery.html">e-RS Clinical Referral Information Query</a></li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>StructureDefinitions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1">eRS-FetchServices-List-1</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<h2 id="example">Example</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1">Extension-eRS-ServiceSearch-ListItem-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1">Extension-eRS-ServiceSummaryView-1</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://data.developer.nhs.uk/specifications/eRS-draftd/Chapter.5.Examples/examples.html">Examples section</a></p>
+<table>
+  <thead>
+    <tr>
+      <th>ValueSets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-AdditionalRequirementType-1">eRS-AdditionalRequirementType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentType-1">eRS-AppointmentType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-BookableType-1">eRS-BookableType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-CapacityAlert-1">eRS-CapacityAlert-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningProvisioning-1">eRS-CommissioningProvisioning-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningType-1">eRS-CommissioningType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-IWT-1">eRS-IWT-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-FetchOutcomeType-1">eRS-FetchOutcomeType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-GenderTreated-1">eRS-GenderTreated-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1">eRS Priority</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestFlowType-1">eRS-RequestFlowType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestType-1">eRS-RequestType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-SortBy-1">eRS Sort By</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>CodeSystems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-AdditionalRequirementType-1">eRS-AdditionalRequirementType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1">eRS-AppointmentType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1">eRS-BookableType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-CapacityAlert-1">eRS-CapacityAlert-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning">eRS-CommissioningProvisioning-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningType-1">eRS-CommissioningType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-IWT-1">eRS-IWT-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-FetchOutcomeType-1">eRS-FetchOutcomeType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1">eRS-GenderTreated-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1">eRS Priority</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1">eRS-RequestFlowType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1">eRS-RequestType-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1">eRS Sort By</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
     <div class="tags">

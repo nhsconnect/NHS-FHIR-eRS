@@ -322,6 +322,18 @@
 
 	{
 		
+		"title": "Service Search",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "servicesearch_resources_stu3.html",
+		"summary": "Links to the Service Search endpoint profiles",
+		"content": "{% include warning.html content=\"The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop \nusing this version until further notice.\" %}\n\n## Profiles ##\n\n|OperationDefinition| \n|-------|\n|[eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1) | \n\n\n|StructureDefinitions| \n|-------|\n|[eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1) | \n\n\n|Extensions| \n|-------|\n|[Extension-eRS-ServiceSearch-ListItem-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1) | \n|[Extension-eRS-ServiceSummaryView-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1) | \n\n\n|ValueSets| \n|-------|\n|[eRS-AdditionalRequirementType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AdditionalRequirementType-1) | \n|[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentType-1)| \n|[eRS-BookableType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-BookableType-1)| \n|[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CapacityAlert-1)| \n|[eRS-CommissioningProvisioning-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningProvisioning-1)| \n|[eRS-CommissioningType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningType-1)| \n|[eRS-IWT-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-IWT-1)| \n|[eRS-FetchOutcomeType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-FetchOutcomeType-1)| \n|[eRS-GenderTreated-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-GenderTreated-1)| \n|[eRS Priority](https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1)| \n|[eRS-RequestFlowType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestFlowType-1)| \n|[eRS-RequestType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestType-1)| \n|[eRS Sort By](https://fhir.nhs.uk/STU3/ValueSet/eRS-SortBy-1)| \n\n|CodeSystems| \n|-------|\n|[eRS-AdditionalRequirementType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AdditionalRequirementType-1) | \n|[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1)| \n|[eRS-BookableType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1)| \n|[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CapacityAlert-1)| \n|[eRS-CommissioningProvisioning-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning)| \n|[eRS-CommissioningType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningType-1)| \n|[eRS-IWT-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-IWT-1)| \n|[eRS-FetchOutcomeType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-FetchOutcomeType-1)| \n|[eRS-GenderTreated-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1)| \n|[eRS Priority](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1)| \n|[eRS-RequestFlowType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1)| \n|[eRS-RequestType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1)| \n|[eRS Sort By](https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1)| \n"
+		
+	}
+	,
+
+	{
+		
 		"title": "Capabilities",
 		"tags": "explanation",
 		"keywords": "capabilities ,overview, API",

@@ -56,7 +56,12 @@ entries:
         - title: STU3 (Draft)
           url: /retrieveci_resources_stu3.html
           output: web
-           
+      - title: Service Search
+        output: web
+        subfolderitems:
+        - title: STU3 (Draft)
+          url: /servicesearch_resources_stu3.html
+          output: web      
     #      subfolderitems:
     #      - title: CapabilityStatement
     #        url: /resources_capabilitystatement.html
