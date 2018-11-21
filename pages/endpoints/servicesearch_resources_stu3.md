@@ -19,7 +19,7 @@ using this version until further notice." %}
 |StructureDefinitions| 
 |-------|
 |[eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1) | 
-
+|[eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)
 
 |Extensions| 
 |-------|

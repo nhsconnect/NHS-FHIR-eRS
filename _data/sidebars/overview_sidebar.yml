@@ -61,7 +61,13 @@ entries:
         subfolderitems:
         - title: STU3 (Draft)
           url: /servicesearch_resources_stu3.html
-          output: web      
+          output: web
+      - title: Generate Patient Letter
+        output: web
+        subfolderitems:
+        - title: STU3 (Draft)
+          url: /genpatientletter_resources_stu3.html
+          output: web          
     #      subfolderitems:
     #      - title: CapabilityStatement
     #        url: /resources_capabilitystatement.html
