@@ -17,6 +17,18 @@
 
 	{
 		
+		"title": "Create Referral",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "createreferral_resources_stu3.html",
+		"summary": "Links to the Create Referral endpoint profiles",
+		"content": "<div class=\"alert alert-danger\" role=\"alert\"><i class=\"fa fa-exclamation-circle\"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop \nusing this version until further notice.</div>\n\n<h2 id=\"operations\">Operations</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>OperationDefinition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td> </td>\n    </tr>\n  </tbody>\n</table>\n"
+		
+	}
+	,
+
+	{
+		
 		"title": "Endpoint Catalogue",
 		"tags": "endpoint",
 		"keywords": "endpoint ,catalogue, API",
@@ -88,6 +100,18 @@
 		"url": "index.html",
 		"summary": "A brief introduction to getting started with the e-RS FHIR&amp;reg; APIs.",
 		"content": "<div class=\"alert alert-warning\" role=\"alert\"><i class=\"fa fa-warning\"></i> <b>Important:</b> This site is under active development by NHS Digital and is intended to provide all the technical resources you need to successfully develop the e-RS API endpoints.</div>\n\n<h1 id=\"introduction\">Introduction</h1>\n\n<p>This specification provides information on the design and implementation of FHIR Application Programming Interfaces (APIs) within the NHS e-Referral Service (NHS e-RS). \nThe FHIR® APIs within this site have been developed by NHS Digital. These APIs aim to better support the delivery of care by opening up information and data stored by the Electronic Referral Service (e-RS).</p>\n\n<h1 id=\"using-this-guide\">Using this guide</h1>\n\n<p>This guide has been created to support the adoption of the FHIR® e-RS API profiles and FHIR resources. As such the site is structured around stakeholders including API users, developers and architects, who have an interest in implementing the FHIR® e-RS API.</p>\n\n<p>The specification is intended to be used alongside the published FHIR® specifications:</p>\n<ul>\n  <li><a href=\"https://www.hl7.org/fhir/DSTU2/\">FHIR DSTU2</a></li>\n  <li><a href=\"http://hl7.org/fhir/\">FHIR STU3</a></li>\n</ul>\n\n<h1 id=\"ecosystem\">Ecosystem</h1>\n<p>Further information about the e-RS API development and the development stages is available on the <a href=\"https://developer.nhs.uk/apis/e-Referrals/index.html\">Health Developer Network</a>.</p>\n"
+		
+	}
+	,
+
+	{
+		
+		"title": "Maintain Referral",
+		"tags": "",
+		"keywords": "rest, resource",
+		"url": "maintainreferral_resources_stu3.html",
+		"summary": "Links to the Maintain Referral endpoint profiles",
+		"content": "<div class=\"alert alert-danger\" role=\"alert\"><i class=\"fa fa-exclamation-circle\"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop \nusing this version until further notice.</div>\n\n<h2 id=\"operations\">Operations</h2>\n\n<table>\n  <thead>\n    <tr>\n      <th>OperationDefinition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td> </td>\n    </tr>\n  </tbody>\n</table>\n"
 		
 	}
 	,

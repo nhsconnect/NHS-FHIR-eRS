@@ -4,6 +4,9 @@
 <loc>http://localhost:4005/404.html</loc>
 </url>
 <url>
+<loc>http://localhost:4005/createreferral_resources_stu3.html</loc>
+</url>
+<url>
 <loc>http://localhost:4005/explore_endpoint_catalogue.html</loc>
 </url>
 <url>
@@ -20,6 +23,9 @@
 </url>
 <url>
 <loc>http://localhost:4005/</loc>
+</url>
+<url>
+<loc>http://localhost:4005/maintainreferral_resources_stu3.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/js/mydoc_scroll.html</loc>

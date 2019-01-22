@@ -67,7 +67,19 @@ entries:
         subfolderitems:
         - title: STU3 (Draft)
           url: /genpatientletter_resources_stu3.html
-          output: web          
+          output: web 
+      - title: Create Referral
+        output: web
+        subfolderitems:
+        - title: STU3 (Draft)
+          url: /createreferral_resources_stu3.html
+          output: web  
+      - title: Maintain Referral
+        output: web
+        subfolderitems:
+        - title: STU3 (Draft)
+          url: /maintainreferral_resources_stu3.html
+          output: web            
     #      subfolderitems:
     #      - title: CapabilityStatement
     #        url: /resources_capabilitystatement.html
