@@ -22,13 +22,13 @@ using this version until further notice." %}
 
 |Extensions|
 |-------|
-[Extension-eRS-CreateReferralShortlist-SearchCriteria-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-CreateReferralShortlist-SearchCriteria-1)
-[Extension-eRS-PathwayServiceFor-Shortlist-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-PathwayServiceFor-Shortlist-1)
+|[Extension-eRS-CreateReferralShortlist-SearchCriteria-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-CreateReferralShortlist-SearchCriteria-1)|
+|[Extension-eRS-PathwayServiceFor-Shortlist-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-PathwayServiceFor-Shortlist-1)|
 
 |ValueSets|
 |-------|
-[eRS Referral Letter Intention](http://localhost:8080/STU3/ValueSet/eRS-ReferralLetterIntention-1)
+|[eRS Referral Letter Intention](http://localhost:8080/STU3/ValueSet/eRS-ReferralLetterIntention-1)|
 
 |CodeSystems|
 |-------|
-[eRS Referral Letter Intention](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1)
+|[eRS Referral Letter Intention](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1)|
