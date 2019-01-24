@@ -74,7 +74,7 @@ entries:
         - title: STU3 (Draft)
           url: /createreferral_resources_stu3.html
           output: web  
-      - title: Maintain Referral
+      - title: Maintain Referral Letter
         output: web
         subfolderitems:
         - title: STU3 (Draft)
