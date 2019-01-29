@@ -36,6 +36,9 @@ using this version until further notice." %}
 |[Extension-eRS-ClinicalInfoFirstSubmitted-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1)|
 |[Extension-eRS-ClinicalInfoLastUpdated-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1)|
 |[Extension-eRS-AttachedBy-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1)|
+|[Extension-eRS-OperationOutcomeElementName-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementName-1)|
+|[Extension-eRS-OperationOutcomeElementValue-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementValue-1)|
+|[Extension-eRS-ReferralPriority-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1)|
 
 |ValueSets|
 |-------|
