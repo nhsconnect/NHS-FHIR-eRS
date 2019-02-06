@@ -13,9 +13,9 @@ using this version until further notice." %}
 
 |OperationDefinition| 
 |-------|
-|[eRS-MaintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1)| 
+|[eRS-MaintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1/_history/1.0)| 
 
 
 |StructureDefinition| 
 |-------|
-|[eRS-DocumentReference-1]( https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1)|
+|[eRS-DocumentReference-1]( https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1/_history/1.1)|

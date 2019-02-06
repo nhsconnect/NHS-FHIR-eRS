@@ -6,9 +6,6 @@ permalink: fetch_worklist_resources_stu3.html
 summary: "Links to the Fetch Worklist endpoint profiles"
 ---
 
-{% include warning.html content="The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop 
-using this version until further notice." %}
-
 ## Profiles ##
 
 |OperationDefinition|
@@ -18,49 +15,49 @@ using this version until further notice." %}
 
 |StructureDefinition| 
 |-------|
-| [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1) | 
-| [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1) | 
-| [eRS-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1) | 
-| [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1) | 
-| [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1) | 
-| [eRS-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1) | 
-| [eRS-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-HealthcareService-1) | 
-| [eRS-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1) | 
-| [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) | 
-| [eRS-Specialty-ValueSet-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1) |
+| [eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1/_history/1.0) | 
+| [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1/_history/1.0) | 
+| [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1/_history/1.0) | 
+| [eRS-HealthcareService-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-HealthcareService-1/_history/1.0) | 
+| [eRS-Location-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Location-1/_history/1.0) | 
+| [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1/_history/1.0) | 
+| [eRS-Patient-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1/_history/1.0) | 
+| [eRS-Practitioner-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1/_history/1.0) | 
+| [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1/_history/1.0) | 
+| [eRS-Specialty-ValueSet-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-ValueSet-1/_history/1.0) |
 
 |Extensions|
 |-------|
-|[Extension-eRS-ReferralsforReview-WorkListItem-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralsforReview-WorkListItem-1)|
-|[Extension-eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1)|
-|[Extension-eRS-ClinicalInfoFirstSubmitted-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1)|
-|[Extension-eRS-ClinicalInfoLastUpdated-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1)|
-|[Extension-eRS-AttachedBy-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1)|
-|[Extension-eRS-OperationOutcomeElementName-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementName-1)|
-|[Extension-eRS-OperationOutcomeElementValue-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementValue-1)|
-|[Extension-eRS-ReferralPriority-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1)|
+|[Extension-eRS-Appointment-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1/_history/1.0)|
+|[Extension-eRS-AttachedBy-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1/_history/1.0)|
+|[Extension-eRS-ClinicalInfoFirstSubmitted-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1/_history/1.0)|
+|[Extension-eRS-ClinicalInfoLastUpdated-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1/_history/1.0)|
+|[Extension-eRS-OperationOutcomeElementName-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementName-1/_history/1.0)|
+|[Extension-eRS-OperationOutcomeElementValue-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementValue-1/_history/1.0)|
+|[Extension-eRS-ReferralsforReview-WorkListItem-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralsforReview-WorkListItem-1/_history/1.0)|
+|[Extension-eRS-ReferralPriority-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1/_history/1.0)|
 
 |ValueSets|
 |-------|
-|[eRS API Error Code](https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1)|
-|[eRS Appointment Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentStatus-1)|
-|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1)|
-|[eRS Attachment Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1)|
-|[eRS Priority](https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1)|
-|[eRS Referral Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1)|
-|[eRS Request Context Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1)|
-|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralListSelector-1)|
+|[eRS API Error Code](https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS Appointment Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentStatus-1/_history/1.0)|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/ValueSet/eRS-AssignedIndicator-1/_history/1.0)|
+|[eRS Attachment Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1/_history/1.0)|
+|[eRS Priority](https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1/_history/1.0)|
+|[eRS Referral Type](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralType-1/_history/1.0)|
+|[eRS Request Context Status](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestContextStatus-1/_history/1.0)|
+|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralListSelector-1/_history/1.0)|
 
 |CodeSystems|
 |-------|
-|[eRS API Error Code](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1)|
-|[eRS Appointment Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1)|
-|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AssignedIndicator-1)|
-|[eRS Attachment Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1)|
-|[eRS Priority](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1)|
-|[eRS Referral Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1)|
-|[eRS Request Context Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1)|
-|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralListSelector-1)|
+|[eRS API Error Code](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS Appointment Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1/_history/1.0)|
+|[eRS Assigned Indicator](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AssignedIndicator-1/_history/1.0)|
+|[eRS Attachment Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1/_history/1.0)|
+|[eRS Priority](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1/_history/1.0)|
+|[eRS Referral Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralType-1/_history/1.0)|
+|[eRS Request Context Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestContextStatus-1/_history/1.0)|
+|[eRS Referral List Selector](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralListSelector-1/_history/1.0)|
 
 ## Examples ##
 

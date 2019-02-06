@@ -13,4 +13,4 @@ using this version until further notice." %}
 
 |OperationDefinition| 
 |-------|
-|[eRS-GeneratePatientLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-GeneratePatientLetter-Operation-1) | 
+|[eRS-GeneratePatientLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-GeneratePatientLetter-Operation-1/_history/1.0) | 
