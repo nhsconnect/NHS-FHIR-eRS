@@ -27,7 +27,7 @@ using this version until further notice." %}
 
 |ValueSets|
 |-------|
-|[eRS Referral Letter Intention](http://localhost:8080/STU3/ValueSet/eRS-ReferralLetterIntention-1/_history/1.0)|
+|[eRS Referral Letter Intention](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralLetterIntention-1/_history/1.0)|
 
 |CodeSystems|
 |-------|
