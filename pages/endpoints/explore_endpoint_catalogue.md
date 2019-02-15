@@ -20,3 +20,5 @@ For further API endpoint information see the [Endpoint Catalogue](https://develo
 | A006|Retrieve Attachment|Clinical Referral Information|
 | A007|Retrieve Clinical Information|Clinical Referral Information|
 | A008|Retrieve Worklist|Clinical Referral Information|
+| A010|Service Search|Service Search|
+| A011|Create Referral|Referral Request|
