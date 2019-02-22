@@ -22,7 +22,7 @@ using this version until further notice." %}
 
 |Extensions|
 |-------|
-|[Extension-eRS-CreateReferralShortlist-SearchCriteria-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-CreateReferralShortlist-SearchCriteria-1/_history/1.0)|
+|[Extension-eRS-Shortlist-SearchCriteria-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1/_history/1.0)|
 |[Extension-eRS-PathwayServiceFor-Shortlist-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-PathwayServiceFor-Shortlist-1/_history/1.0)|
 
 |ValueSets|
