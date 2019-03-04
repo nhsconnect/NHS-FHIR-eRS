@@ -19,3 +19,13 @@ using this version until further notice." %}
 |StructureDefinition| 
 |-------|
 |[eRS-DocumentReference-1]( https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1/_history/1.1)|
+
+
+|ValueSets|
+|-------|
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1/_history/1.0)|
+
+
+|CodeSystems|
+|-------|
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|

@@ -30,6 +30,7 @@ using this version until further notice." %}
 |ValueSets| 
 |-------|
 |[eRS-AdditionalRequirementType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AdditionalRequirementType-1/_history/1.0) | 
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1/_history/1.0)|
 |[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentType-1/_history/1.0)| 
 |[eRS-BookableType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-BookableType-1/_history/1.0)| 
 |[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CapacityAlert-1/_history/1.0)| 
@@ -45,6 +46,7 @@ using this version until further notice." %}
 |CodeSystems| 
 |-------|
 |[eRS-AdditionalRequirementType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AdditionalRequirementType-1/_history/1.0) | 
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
 |[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1/_history/1.0)| 
 |[eRS-BookableType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1/_history/1.0)| 
 |[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CapacityAlert-1/_history/1.0)| 

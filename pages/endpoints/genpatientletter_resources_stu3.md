@@ -14,3 +14,13 @@ using this version until further notice." %}
 |OperationDefinition| 
 |-------|
 |[eRS-GeneratePatientLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-GeneratePatientLetter-Operation-1/_history/1.0) | 
+
+
+|ValueSets|
+|-------|
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1/_history/1.0)|
+
+
+|CodeSystems|
+|-------|
+|[eRS-APIErrorCode-1]|(https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
