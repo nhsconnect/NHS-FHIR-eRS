@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Overview of the Explore section">
-<meta name="keywords" content="restfhir,  resources, rest, resource">
-<title>eRS Resources | eRS</title>
+<meta name="description" content="Links to the Accept/Reject Referral endpoint profiles">
+<meta name="keywords" content=" rest, resource">
+<title>Accept/Reject Referral | eRS</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -105,7 +104,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> FHIR® eRS Referral API</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> FHIR&reg; eRS Referral API</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -132,7 +131,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="eRS Resources">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Accept/Reject Referral">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -148,7 +147,7 @@
 
 <!-- Page Content -->
 <div class="container">
-    <div class="col-lg-12"> </div>
+    <div class="col-lg-12">&nbsp;</div>
     <!-- Content Row -->
     <div class="row">
         
@@ -168,11 +167,11 @@
 
  
     <p style="font-size:16px;">
-    <img src="images/logo.png" alt="NHS Digital Logo">
+    <img src="images/logo.png" alt="NHS Digital Logo"/>
     </p>
 
 
-    <li class="sidebarTitle">eRS FHIR® API 1.0.0 draft</li>
+    <li class="sidebarTitle">eRS FHIR&reg; API 1.0.0 draft</li>
     
     
     
@@ -352,7 +351,7 @@
                     
                     
                     
-                    <li><a href="acceptrejectreferral_resources_stu3.html">STU3 (Draft)</a></li>
+                    <li class="active"><a href="acceptrejectreferral_resources_stu3.html">STU3 (Draft)</a></li>
                     
                     
                     
@@ -368,7 +367,7 @@
         
     
     <li>
-        <a href="#">Help &amp; Support</a>
+        <a href="#">Help & Support</a>
         <ul>
             
             
@@ -409,7 +408,7 @@
              
 
 <div class="post-header">
-   <h1 class="post-title-main">eRS Resources</h1>
+   <h1 class="post-title-main">Accept/Reject Referral</h1>
 </div>
 
 
@@ -417,7 +416,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Overview of the Explore section</div>
+    <div class="summary">Links to the Accept/Reject Referral endpoint profiles</div>
    
 
    
@@ -447,94 +446,55 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  
-<div class="alert alert-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Important:</b> This site is under active development by NHS Digital to develop the eRS APIs. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis.</div>
+  <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop 
+using this version until further notice.</div>
 
-<h2 id="1-pre-requisites-for-fhir-servers">1. Pre-Requisites for FHIR Servers</h2>
+<h2 id="operations">Operations</h2>
 
-<h3 id="11-api-requirements">1.1 API Requirements</h3>
+<table>
+  <thead>
+    <tr>
+      <th>OperationDefinition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/OperationDefinition/eRS-AcceptReferral-Operation-1/_history/1.0">eRS-AcceptReferral-Operation-1</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/OperationDefinition/eRS-RejectReferral-Operation-1/_history/1.0">eRS-RejectReferral-Operation-1</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li>SHALL support HL7 FHIR STU3 version 3.0.1.</li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>ValueSets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/ValueSet/eRS-RejectionReason-1/_history/1.0">eRS-RejectionReason-1</a></td>
+    </tr>
+  </tbody>
+</table>
 
-<!--- SHALL support the CareConnect Patient resource profile.
-- SHALL support at least one additional resource profile from the list of CareConnect Profiles-->
-
-<ul>
-  <li>
-    <p>SHALL Implement REST behavior according to the <a href="http://http://www.hl7.org/fhir/http.html">FHIR specification</a></p>
-  </li>
-  <li>
-    <p>Resources SHALL identify the profile supported as part of the <a href="https://hl7.org/fhir/resource-definitions.html#Resource.meta">FHIR Base Resource</a></p>
-  </li>
-  <li>
-    <p>SHALL support XML <strong>or</strong> JSON formats for all API interactions and SHOULD support both formats.</p>
-  </li>
-</ul>
-
-<h3 id="12-fhir-conformance">1.2 FHIR Conformance</h3>
-
-<p>SHALL declare a Conformance identifying the list of profiles, operations and search parameters supported.</p>
-
-<p>In order to be a compliant FHIR server, client systems need to expose a valid FHIR <a href="https://www.http://hl7.org/fhir/STU3/capabilitystatement.html">CapabilityStatement</a> profile.</p>
-
-<div class="alert contribute contribute-warning" role="alert">
-<i class="fa fa-warning"></i> <b>Contribute:</b> Get in touch with interoperabilityteam@nhs.net to improve the Prerequisites.</div>
-
-<h2 id="2-resource-api-structure">2. Resource API Structure</h2>
-<p>The FHIR profile API’s described in the Explore section of this implementation guide have been structured consistently in the following way:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">0.</code> References</li>
-  <li>
-<code class="highlighter-rouge">1.</code> Read</li>
-  <li>
-<code class="highlighter-rouge">2.</code> Search Parameters</li>
-  <li>
-<code class="highlighter-rouge">3.</code> Example</li>
-</ul>
-
-<h3 id="21-resource-api-structure-details">2.1 Resource API Structure Details</h3>
-
-<table style="min-width:100%;width:100%">
-<tr id="clinical">
-<th style="width:20%;">General</th>
-<th style="width:80%;">Description </th>
-</tr>
-<tr>
-<td>0. References</td>
-<td>Links to other parts of the implementation guide which might help with context and understanding the API's described</td>
-</tr>
-<tr>
-<td>1. Read</td>
-<td>A description of how to get the API</td>
-</tr>
-<tr>
-<td>2. Search Parameters</td>
-<td>List of search parameters for the profile being described, including any tips for searching. This section shows examples of how to search using the provided search parameters</td>
-</tr>
-<tr>
-<td>3. Example</td>
-<td>Description of of the Request &amp; Response headers, example of how to search on a server and the expected response body as an example</td>
-</tr>
+<table>
+  <thead>
+    <tr>
+      <th>CodeSystems</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://fhir.nhs.uk/STU3/CodeSystem/eRS-RejectionReason-1/_history/1.0">eRS-RejectionReason-1</a></td>
+    </tr>
+  </tbody>
 </table>
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_rest.html" class="btn btn-default navbar-btn cursorNorm" role="button">rest</a>
-        
-        
-        
-        <a href="tag_fhir.html" class="btn btn-default navbar-btn cursorNorm" role="button">fhir</a>
-        
-        
         
     </div>
 
@@ -542,20 +502,20 @@ $('#toc').on('click', 'a', function() {
 
 </div>
 
-<hr class="shaded">
+<hr class="shaded"/>
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
-                    <br>
-                    ©2019 NHS Digital<br>
-                     Site last generated: Apr 1, 2019 <br>
-                    86444cb1fa937fb09940f3dcc2365ca3279d54dd<br>
-                    <br>
+                    <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line"/>
+                    <br/>
+                    &copy;2019 NHS Digital<br />
+                     Site last generated: Apr 1, 2019 <br />
+                    86444cb1fa937fb09940f3dcc2365ca3279d54dd<br/>
+                    <br/>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">
-                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></a>
+                        <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon"><img src="images/licence/ogl-symbol-41px-retina-black.png"></img></a>
                         <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license" class="no_icon">Open Government Licence v3.0</a>, except where otherwise stated</p>
                     </div>
                 </div>

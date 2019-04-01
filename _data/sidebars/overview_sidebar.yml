@@ -79,7 +79,13 @@ entries:
         subfolderitems:
         - title: STU3 (Draft)
           url: /maintainreferral_resources_stu3.html
-          output: web            
+          output: web
+      - title: Accept/Reject Referral
+        output: web
+        subfolderitems:
+        - title: STU3 (Draft)
+          url: /acceptrejectreferral_resources_stu3.html
+          output: web          
     #      subfolderitems:
     #      - title: CapabilityStatement
     #        url: /resources_capabilitystatement.html
