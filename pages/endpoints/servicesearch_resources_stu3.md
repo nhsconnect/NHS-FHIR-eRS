@@ -19,10 +19,13 @@ using this version until further notice." %}
 |StructureDefinitions| 
 |-------|
 |[eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1/_history/1.0) | 
-|[eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1/_history/1.0)
+|[eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1/_history/1.1)|
+|[eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1/_history/1.0)|
 
 |Extensions| 
 |-------|
+|[Extension-eRS-OperationOutcomeElementName-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementName-1/_history/1.0)|
+|[Extension-eRS-OperationOutcomeElementValue-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementValue-1/_history/1.0)|
 |[Extension-eRS-ServiceSearch-ListItem-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1/_history/1.0) | 
 |[Extension-eRS-ServiceSummaryView-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1/_history/1.0) | 
 
