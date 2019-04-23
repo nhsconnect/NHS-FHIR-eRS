@@ -42,7 +42,6 @@ using this version until further notice." %}
 |[eRS-RequestFlowType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestFlowType-1/_history/1.0)| 
 |[eRS Referral Letter Intention](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralLetterIntention-1/_history/1.0)|
 |[eRS-RequestType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestType-1/_history/1.0)| 
-|[eRS Sort By](https://fhir.nhs.uk/STU3/ValueSet/eRS-SortBy-1/_history/1.0)| 
 |[eRS Specialty](https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1/_history/1.0)| 
 
 
@@ -61,4 +60,3 @@ using this version until further notice." %}
 |[eRS Referral Letter Intention](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1/_history/1.0)|
 |[eRS-RequestFlowType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1/_history/1.0)| 
 |[eRS-RequestType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1/_history/1.0)| 
-|[eRS Sort By](https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1/_history/1.0)| 
