@@ -21,11 +21,19 @@ using this version until further notice." %}
 |[eRS-DocumentReference-1]( https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1/_history/1.1)|
 
 
+|Extensions|
+|-------|
+|[Extension-eRS-OperationOutcomeElementName-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementName-1/_history/1.0)|
+|[Extension-eRS-OperationOutcomeElementValue-1](https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-OperationOutcomeElementValue-1/_history/1.0)|
+
+
 |ValueSets|
 |-------|
 |[eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS-AttachmentType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AttachmentType-1/_history/1.0)|
 
 
 |CodeSystems|
 |-------|
 |[eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS-AttachmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1/_history/1.0)|

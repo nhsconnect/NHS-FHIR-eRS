@@ -13,7 +13,7 @@ using this version until further notice." %}
 
 |OperationDefinition| 
 |-------|
-|[eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0) | 
+|[eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.1) | 
 
 
 |StructureDefinitions| 
@@ -37,6 +37,7 @@ using this version until further notice." %}
 |[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-AppointmentType-1/_history/1.0)| 
 |[eRS-BookableType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-BookableType-1/_history/1.0)| 
 |[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CapacityAlert-1/_history/1.0)| 
+|[eRS-ClinicType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-ClinicType-1/_history/1.0)| 
 |[eRS-CommissioningProvisioning-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningProvisioning-1/_history/1.0)| 
 |[eRS-IWT-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-IWT-1/_history/1.0)| 
 |[eRS-GenderTreated-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-GenderTreated-1/_history/1.0)| 
@@ -44,6 +45,7 @@ using this version until further notice." %}
 |[eRS-RequestFlowType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestFlowType-1/_history/1.0)| 
 |[eRS-RequestType-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestType-1/_history/1.0)| 
 |[eRS Sort By](https://fhir.nhs.uk/STU3/ValueSet/eRS-SortBy-1/_history/1.0)| 
+|[eRS Specialty](https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1/_history/1.0)| 
 
 |CodeSystems| 
 |-------|
@@ -52,6 +54,7 @@ using this version until further notice." %}
 |[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1/_history/1.0)| 
 |[eRS-BookableType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1/_history/1.0)| 
 |[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CapacityAlert-1/_history/1.0)| 
+|[eRS-ClinicType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1/_history/1.0)| 
 |[eRS-CommissioningProvisioning-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1/_history/1.0)| 
 |[eRS-IWT-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-IWT-1/_history/1.0)| 
 |[eRS-GenderTreated-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1/_history/1.0)| 
