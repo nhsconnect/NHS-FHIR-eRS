@@ -41,7 +41,7 @@ summary: "Example of the Referral Request profile"
 
 |CodeSystems|
 |-------|
-|[eRS API Error Code](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS API Error Code](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.1)|
 |[eRS Appointment Status](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentStatus-1/_history/1.0)|
 |[eRS Attachment Type](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1/_history/1.0)|
 |[eRS Priority](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1/_history/1.0)|

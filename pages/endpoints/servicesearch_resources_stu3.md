@@ -6,9 +6,6 @@ permalink: servicesearch_resources_stu3.html
 summary: "Links to the Service Search endpoint profiles"
 ---
 
-{% include warning.html content="The profiles below have been created using FHIR STU3 and are currently in a draft state. Is it advised not to develop 
-using this version until further notice." %}
-
 ## Profiles ##
 
 |OperationDefinition| 
@@ -50,7 +47,7 @@ using this version until further notice." %}
 |CodeSystems| 
 |-------|
 |[eRS-AdditionalRequirementType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AdditionalRequirementType-1/_history/1.0) | 
-|[eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.0)|
+|[eRS-APIErrorCode-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-APIErrorCode-1/_history/1.1)|
 |[eRS-AppointmentType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1/_history/1.0)| 
 |[eRS-BookableType-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1/_history/1.0)| 
 |[eRS-CapacityAlert-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-CapacityAlert-1/_history/1.0)| 
