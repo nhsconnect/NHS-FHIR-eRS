@@ -11,6 +11,7 @@ summary: "Links to the Create Referral endpoint profiles"
 |OperationDefinition| 
 |-------|
 |[eRS-CreateReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1/_history/1.0)| 
+|[eRS-CreateReferralAndSendForTriage-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferralAndSendForTriage-Operation-1/_history/1.0)| 
 
 
 |StructureDefinition| 
