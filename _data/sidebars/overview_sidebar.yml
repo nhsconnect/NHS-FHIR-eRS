@@ -90,7 +90,7 @@ entries:
         output: web
         subfolderitems:
         - title: STU3 (Draft)
-          url: /bookappointment_resources_stu3.htm
+          url: /bookappointment_resources_stu3.html
           output: web          
     #      subfolderitems:
     #      - title: CapabilityStatement
