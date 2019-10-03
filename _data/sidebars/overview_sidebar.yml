@@ -92,10 +92,10 @@ entries:
         - title: STU3 (Draft)
           url: /bookappointment_resources_stu3.html
           output: web          
-    #      subfolderitems:
-    #      - title: CapabilityStatement
-    #        url: /resources_capabilitystatement.html
-    #        output: web
+    #   subfolderitems:
+    #   - title: CapabilityStatement
+    #     url: /resources_capabilitystatement.html
+    #     output: web
   
   - title: Help & Support
     output: web
